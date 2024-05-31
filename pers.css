@@ -1,0 +1,237 @@
+@charset "UTF-8";
+ 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    height:100vh;
+    background-color:rgb(10, 10, 63);
+}
+
+header {
+    background-color:rgb(51, 51, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    height:45px;
+    margin-bottom: 45px;;
+}
+
+header section#title {
+    display:flex;
+    align-items:center;
+}
+
+header h1 {
+    color:white;
+    margin:5px;
+    font-size:1.3em;
+}
+
+header img {
+    width:100px;
+    margin:5px;
+}
+
+header span {
+    color:white;
+    cursor:pointer;
+}
+
+menu#itens {
+    background-color: rgb(30, 30, 30);
+    display:none;
+    border-radius:5px;
+}
+
+menu#itens > ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+menu#itens > ul > li {
+    background-color: rgb(48, 48, 48);
+    padding:10px;
+    border-radius: 5px;
+    width:60px;
+    text-align: center;
+}
+
+menu#itens > ul > li > a {
+    color:white;
+    text-decoration:none;
+}
+
+main {
+    background-color:rgb(39, 38, 38);
+    padding:10px;
+    width:90%;
+    margin:auto;
+}
+
+main article {
+    background-color:rgb(52, 51, 51);
+    padding:10px;
+    border-radius:10px;
+}
+
+main div {
+    display:flex;
+    margin-bottom:20px;
+}
+
+main img#pers{
+    background-image:linear-gradient(to bottom, red,rgb(255, 161, 47));
+    border-radius: 10px;
+    width:150px;
+}
+
+main > article > div > h1 {
+    color:white;
+    margin-left:20px;
+}
+
+div#arm {
+    background-color: rgb(67, 67, 67);
+    color:white;
+    display: flex;
+    width:100px;
+    height:50px;
+    border-radius:5px;
+    padding:5px;
+    align-items:center;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+main img.gun {
+    width:50px;
+    background-color:rgb(0, 0, 0);
+    margin-right:8px;
+    border-radius:5px;
+}
+
+ div#if {
+    background-color: rgb(66, 66, 66);
+    color:white;
+    padding:10px;
+    width:70px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    border-radius:5px;
+    margin-top:60px;
+    font-size: 0.9em;
+}
+
+main h2 {
+    color:rgb(255, 157, 0);
+    margin-bottom:10px;
+}
+
+div#lista { 
+    background-color: rgb(63, 63, 63);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width:800px;
+    margin:auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+div.txt {
+    background-color:gray;
+    border-radius: 5px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    margin:10px;
+    padding:5px;
+}
+
+
+div.txt > img {
+    width:75px;
+}
+
+div.txt > p {
+    color:white;
+}
+
+div#armas {
+    background-color: rgb(81, 81, 81);
+    max-width: 800px;
+    margin:auto;
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius: 5px;
+}
+
+div#armas > div.alinhar {
+  background-color: black;
+  width:90%;
+  padding:10px;
+  margin:5px;
+  border-radius:5px;
+  display: flex;
+  align-items:center;
+}
+
+div#armas > div.quatro {
+    background-color: black;
+    width:90%;
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+    display: flex;
+    align-items:center;
+}
+
+div.alinhar > p {
+    color:white;
+    margin-left:10px;
+    margin-right: 20px;
+    background-color: orangered;
+    padding:15px;
+    border-radius: 5px;
+}
+
+div.quatro > p{
+    color:white;
+    margin-left:10px;
+    margin-right: 20px;
+    background-color: blueviolet;
+    padding:15px;
+    border-radius: 5px;
+}
+
+div.alinhar img {
+    width:50px;
+    background-image: linear-gradient(to bottom, red, rgb(255, 145, 0));
+    border-radius: 5px;
+}
+
+div.quatro img {
+    width:50px;
+    background-color:blueviolet;
+    border-radius: 5px;
+}
+
+div#artefato {
+    background-color: rgb(81, 81, 81);
+    max-width: 800px;
+    margin:auto;
+    display: flex;
+    flex-wrap:wrap;
+    padding:10px;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
+

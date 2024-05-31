@@ -1,0 +1,155 @@
+@charset "UTF-8";
+ 
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    height:100vh;
+    background-color:rgb(10, 10, 63);
+}
+
+header {
+    background-color:rgb(51, 51, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    height:45px;
+    margin-bottom: 45px;;
+}
+
+header section#title {
+    display:flex;
+    align-items:center;
+}
+
+header h1 {
+    color:white;
+    margin:5px;
+    font-size:1.3em;
+}
+
+header img {
+    width:100px;
+    margin:5px;
+}
+
+header span {
+    color:white;
+    cursor:pointer;
+}
+
+menu#itens {
+    background-color: rgb(30, 30, 30);
+    display:none;
+    border-radius:5px;
+}
+
+menu#itens > ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+menu#itens > ul > li {
+    background-color: rgb(48, 48, 48);
+    padding:10px;
+    border-radius: 5px;
+    width:60px;
+    text-align: center;
+}
+
+menu#itens > ul > li > a {
+    color:white;
+    text-decoration:none;
+}
+
+main {
+    background-color:rgb(24, 24, 113);
+    max-width:90vw;
+    margin:auto;
+    border-radius:5px;
+    padding:10px;
+    margin-bottom:40px;
+}
+
+main h1 {
+    color:white;
+    font-size:1.4em;
+    padding:20px;
+}
+
+main section {
+    background-color:rgb(31, 31, 142);
+    width:90%;
+    margin:auto;
+    border-radius:5px;
+    padding:10px;
+}
+
+div#lynei {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1 1 150px;
+}
+
+
+
+div#lynei img{
+    background-image:linear-gradient(to bottom, red,rgb(255, 161, 47));
+    display:block;
+    margin:auto;
+    width:150px;
+    border-radius:5px;
+}
+
+footer {
+    background-color: rgb(31, 31, 142);
+    padding:10px;
+    color:rgb(177, 177, 177);
+    height:300px;
+}
+
+footer article {
+    width:90%;
+    margin:auto;
+}
+
+footer h1 {
+    color:white;
+    margin-bottom:10px;
+}
+
+footer h3 {
+ font-size:16px;
+ margin-top:16px;
+ margin-bottom:30px;
+}
+
+footer section#final {
+    display:flex;
+    justify-content: space-around;
+}
+
+footer div {
+    margin-left:20px;
+}
+
+footer div h6 {
+    color:white;
+    font-size:20px;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div a {
+    color:rgb(177, 177, 177);
+    text-decoration:none;
+    font-size: 20px;
+}
