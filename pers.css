@@ -299,6 +299,7 @@ section > div#video {
     position:relative;
     width:100%;
     height:200px;
+    margin-bottom:10px;
 }
 
 div#video iframe {
@@ -310,3 +311,37 @@ div#video iframe {
 }
 
 
+section > div#teams {
+    background-color: black;
+    padding:5px;
+    border-radius: 5px;
+}
+
+section > div#teams > h2 {
+    margin-left:10px;
+}
+
+section > div#teams > div.pers {
+    background-color: rgb(255, 140, 0);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    border-radius: 5px;
+    padding:3px;
+    margin-bottom:5px;
+}
+
+div.pers > div.laranja img {
+    width:80px;
+    border-radius: 5px;
+    background-image:linear-gradient(to bottom, rgb(255, 89, 0), red);
+}
+
+div.roxo img {
+    width:80px;
+    background-color: blueviolet;
+    margin-top: 4px;
+    margin-bottom:2px;
+    border-radius:5px;
+}
