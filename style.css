@@ -7,7 +7,6 @@
 }
 
 body {
-    height:100vh;
     background-color:rgb(10, 10, 63);
 }
 
@@ -112,11 +111,9 @@ footer {
     background-color: rgb(31, 31, 142);
     padding:10px;
     color:rgb(177, 177, 177);
-    height:250px;
 }
 
 footer article {
-   width:100%;
    margin:auto; 
 }
 

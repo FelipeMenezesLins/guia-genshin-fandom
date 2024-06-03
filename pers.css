@@ -221,7 +221,7 @@ div.quatro > p{
 
 div.alinhar img {
     width:50px;
-    background-image: linear-gradient(to bottom, red, rgb(255, 145, 0));
+    background-image: linear-gradient(to bottom, red, rgb(255, 132, 0));
     border-radius: 5px;
 }
 
@@ -233,10 +233,10 @@ div.quatro img {
 
 div#artefato {
     background-color: rgb(81, 81, 81);
-    max-width: 800px;
     margin:auto;
     display: flex;
     flex-wrap:wrap;
+    justify-content: center;
     margin-bottom:10px;
     padding:10px;
     border-radius: 5px;
@@ -247,6 +247,7 @@ div#artefato > div.ordem {
     width:90%;
     padding:10px;
     margin:5px;
+    margin-right:5px;
     border-radius:5px;
     display: flex;
     align-items:center;
@@ -259,11 +260,12 @@ div#artefato > div.ordem {
     background-color: orangered;
     padding:15px;
     border-radius: 5px;
+    font-size:.9em
 }
 
 div.ordem img {
     width:50px;
-    background-image: linear-gradient(to bottom, red, rgb(255, 145, 0));
+    background-image: linear-gradient(to bottom, red, rgb(255, 102, 0));
     border-radius: 5px;
 }
 
@@ -318,30 +320,81 @@ section > div#teams {
 }
 
 section > div#teams > h2 {
-    margin-left:10px;
+    margin-left:20px;
+    margin-top: 5px;
 }
 
 section > div#teams > div.pers {
     background-color: rgb(255, 140, 0);
     display:flex;
-    flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
     border-radius: 5px;
-    padding:3px;
-    margin-bottom:5px;
+    width:90%;
+    padding:5px;
+    margin:auto;
 }
 
 div.pers > div.laranja img {
-    width:80px;
+    width:60px;
     border-radius: 5px;
     background-image:linear-gradient(to bottom, rgb(255, 89, 0), red);
 }
 
 div.roxo img {
-    width:80px;
+    width:60px;
     background-color: blueviolet;
     margin-top: 4px;
     margin-bottom:2px;
     border-radius:5px;
 }
+
+div.talents {
+    background-color:rgb(63, 63, 63);
+    padding:8px;
+    border-radius: 5px;
+    margin-top:10px;
+}
+
+
+section h2.top {
+    margin-top: 15px;
+    font-size: 1.4em;
+}
+
+
+div.talento img {
+    width:100px;
+    background-color:rgb(103, 102, 102);
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+div.talento h3 {
+    color:white;
+    text-align:center;
+    margin:10px 0px;
+}
+
+div.talento h1 {
+    color:white;
+    font-size: 1.1em;
+    font-weight:bolder;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+div.talento p {
+    color:rgb(204, 200, 200);
+    margin-left:5px;
+    text-align:justify;
+    line-height: 1.3em;
+}
+
+div.talento mark {
+    background:none;
+    border-radius:5px;
+    color:rgb(246, 55, 55);  
+}
+
