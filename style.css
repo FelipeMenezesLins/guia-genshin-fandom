@@ -8,6 +8,7 @@
 
 body {
     background-color:rgb(17, 17, 17);
+    height: 100vh;
 }
 
 header {
@@ -92,9 +93,7 @@ main section {
 
 div#lynei {
     display:flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    flex: 1 1 150px;
 }
 
 
@@ -103,7 +102,9 @@ div#lynei img{
     background-image:linear-gradient(to bottom, red,rgb(255, 161, 47));
     display:block;
     margin:auto;
-    width:150px;
+    margin-right:5px;
+    margin-bottom:5px;
+    width:95px;
     border-radius:5px;
 }
 
@@ -111,11 +112,14 @@ footer {
     background-color: rgb(31, 31, 142);
     padding:10px;
     color:rgb(177, 177, 177);
-    height:300px;
 }
 
-footer article {
-   margin:auto; 
+footer img {
+    display:block;
+    margin:auto;
+    margin-top:10px;
+    background-color: rgb(49, 49, 236);
+    border-radius:50%;
 }
 
 footer h1 {
