@@ -94,6 +94,7 @@ main section {
 div#lynei {
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -117,7 +118,7 @@ footer {
 footer img {
     display:block;
     margin:auto;
-    margin-top:10px;
+    margin-top:20px;
     background-color: rgb(49, 49, 236);
     border-radius:50%;
 }

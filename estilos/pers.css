@@ -80,6 +80,8 @@ main article {
     border-radius:10px;
 }
 
+/*Onde vai ficar a cabeça do Personagem ou a foto*/
+
 main div#cabeçalho {
     display:flex;
     margin-bottom:20px;
@@ -97,6 +99,8 @@ main > article > div > h1 {
     color:white;
     margin-left:20px;
 }
+
+/*Tipo da Arma que o Personagem usa*/
 
 div#arm {
     background-color: rgb(67, 67, 67);
@@ -116,7 +120,7 @@ main img.gun {
     margin-right:8px;
     border-radius:5px;
 }
-
+ /*Categória do Personagem, como DPS OU OUTRA COISA*/
  div#if {
     background-color: rgb(66, 66, 66);
     padding:10px;
@@ -133,11 +137,34 @@ div#if > p {
     color:white;
 }
 
+div#element {
+    display:flex;
+    align-items: center;
+    background-color:rgb(66, 66, 66);
+    border-radius:5px;
+    margin-top:10px;
+    padding:10px;
+}
+
+div#element p {
+    color:white;
+    font-size:.9em;
+}
+
+div#element img {
+    width:50px;
+}
 
 main h2 {
     color:rgb(255, 157, 0);
     margin-bottom:10px;
     font-size: 1.2em;
+}
+
+/*Lista do Farm do personagem*/
+
+article h2.center {
+    text-align: center;
 }
 
 div#lista { 
@@ -169,6 +196,8 @@ div.txt > p {
     color:white;
     font-size: 1em;
 }
+
+/*Armas do Personagem*/
 
 div#armas {
     background-color: rgb(81, 81, 81);
@@ -231,6 +260,8 @@ div.quatro img {
     border-radius: 5px;
 }
 
+/*Artefatos do Personagem*/
+
 div#artefato {
     background-color: rgb(81, 81, 81);
     margin:auto;
@@ -273,6 +304,8 @@ div#duas img{
     margin-right:20px;
 }
 
+/*Status do Personagem*/
+
 div#stats {
     background-color:rgb(81, 81, 81) ;
     max-width: 800px;
@@ -291,11 +324,12 @@ div#stats > div.stats-o {
     text-align: center;
 }
 
+/*Video do Personagem*/
+
 section > h1#aumenta {
     font-size:1.8em;
     color:white;
 }
-
 
 section > div#video {
     position:relative;
@@ -312,6 +346,11 @@ div#video iframe {
   border-radius:5px;
 }
 
+/*Times do Personagem*/
+
+section h2.center {
+    text-align: center;
+}
 
 section > div#teams {
     background-color: black;
@@ -359,12 +398,13 @@ div.talents {
 
 section h2.top {
     margin-top: 15px;
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 
+/*Talentos do Personagem*/
 
 div.talento img {
-    width:100px;
+    width:80px;
     background-color:rgb(103, 102, 102);
     border-radius:50%;
     display:block;
@@ -397,4 +437,176 @@ div.talento mark {
     border-radius:5px;
     color:rgb(246, 55, 55);  
 }
+
+/*Passivas do personagem*/
+
+div.passive1 img {
+    width:65px;
+    background-color:rgb(103, 102, 102);
+    padding:5px;
+    padding-right:10px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+div.passive1 h3 {
+    color:white;
+    text-align: center;
+    margin:10px 0px;
+}
+
+div.passive1 h1 {
+    color:white;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight:bolder;
+    margin-bottom:5px;
+}
+
+div.passive1 p {
+    color:rgb(204, 200, 200);
+    margin-left:5px;
+    text-align:justify;
+    line-height: 1.3em;
+}
+
+div.passive1 mark {
+    background:none;
+    border-radius:5px;
+    color:rgb(246, 55, 55);  
+}
+
+div.passive2 img {
+    width:70px;
+    background-color:rgb(103, 102, 102);
+    padding:5px;
+    padding-top:15px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
+
+div.passive2 h3 {
+    color:white;
+    text-align: center;
+    margin:10px 0px;
+}
+
+div.passive2 h1 {
+    color:white;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight:bolder;
+    margin-bottom:5px;
+}
+
+div.passive2 p {
+    color:rgb(204, 200, 200);
+    margin-left:5px;
+    text-align:justify;
+    line-height: 1.3em;
+}
+
+div.passive2 mark {
+    background:none;
+    border-radius:5px;
+    color:rgb(246, 55, 55);  
+}
+
+/*Acensão do Personagem*/
+
+div#tabela {
+    overflow-x:auto;
+}
+
+table {
+    background-color: rgb(71, 71, 242);
+    width:90%;
+    margin:auto;
+}
+
+th {
+    color:rgb(233, 232, 232);
+    font-size:1.2em;
+    padding:10px;
+    background-color: rgb(45, 45, 255);
+}
+
+tr {
+    background-color: rgb(99, 99, 247);
+    color:white;
+}
+
+td {
+  text-align: center;
+  padding:5px;
+}
+
+td div.juntar {
+    display:flex;
+    align-items: center;
+}
+
+td div.juntar h6 {
+    background-color: rgb(34, 34, 255);
+    padding:10px;
+    border-radius:5px;
+}
+
+td img {
+    width:50px;
+}
+
+footer {
+    background-color: rgb(31, 31, 142);
+    padding:10px;
+    color:rgb(177, 177, 177);
+    margin-top:20px;
+}
+
+footer img {
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    background-color: rgb(49, 49, 236);
+    border-radius:50%;
+}
+
+footer h1 {
+    color:white;
+    margin-bottom:10px;
+}
+
+footer h3 {
+ font-size:16px;
+ margin-top:16px;
+ margin-bottom:30px;
+}
+
+footer section#final {
+    display:flex;
+    justify-content: space-around;
+}
+
+footer div {
+    margin-left:20px;
+}
+
+footer div h6 {
+    color:white;
+    font-size:20px;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div a {
+    color:rgb(177, 177, 177);
+    text-decoration:none;
+    font-size: 20px;
+}
+
+
 
