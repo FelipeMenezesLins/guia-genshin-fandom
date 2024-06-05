@@ -30,3 +30,30 @@
             <img src="imagens/personagens/Bennett.png" alt="">
         </article>
     </footer-->
+    menu#itens {
+        display:;
+        background-color:blue;
+        position:relative;
+    }
+    
+    menu#itens > ul {
+        list-style-type: none;
+        display:flex;
+        max-width:100%;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    
+    menu#itens > ul > li {
+        background-color:rgb(23, 128, 248);
+        border: 1px solid white;
+        padding:10px;
+        text-align:center;
+    }
+    
+    menu#itens > ul > li > a {
+        color:white;
+        text-decoration:none;
+    }
