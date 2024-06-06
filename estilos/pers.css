@@ -168,8 +168,15 @@ div#lista {
     max-width:800px;
     margin:auto;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom:10px;
+    padding-top:5px;
+    padding:5px;
 }
+
+div.duas-prt {
+    margin-top:-5px;
+}
+
 
 div.txt {
     background-color:gray;
@@ -177,7 +184,7 @@ div.txt {
     display:flex;
     justify-content: space-evenly;
     align-items:center;
-    margin:10px; 
+    margin:5px 10px; 
     padding: 5px;
 }
 
@@ -276,7 +283,31 @@ div#artefato > div.ordem {
     border-radius:5px;
     display: flex;
     align-items:center;
+    position:relative;
   }
+
+  div.teste {
+    position:relative;
+    }
+
+  div.teste p.quantidade {
+    color:white;
+    margin-left:10px;
+    margin-right: 20px;
+    background-color: blue;
+    width:10px;
+    height:10px;
+    padding:5px;
+    border-radius: 5px;
+    font-size:.9em;
+    text-align:center;
+    line-height:10px;
+    position: absolute;
+    top:74%;
+    left:60%;
+    transform:translate(-50%, -50%);
+}
+
 
   div.ordem > p {
     color:white;
@@ -295,8 +326,29 @@ div.ordem img {
 }
 
 div#duas img{
-    margin-right:20px;
+    margin-right:px;
 }
+
+
+div.artefatos-2 {
+    width:50%;
+    color:white;
+    display:flex;
+    align-items: center;
+}
+
+div.artefatos-2 p.desapareça {
+    color:white;
+    margin-left:10px;
+    margin-right: 20px;
+    background-color: orangered;
+    padding:15px;
+    border-radius: 5px;
+    font-size:.9em;
+    display:none;
+}
+
+
 
 /*Status do Personagem*/
 
@@ -603,21 +655,66 @@ footer div a {
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
-    main {
-        max-width:700px;
-    }
 
+    
+
+    main {
+        max-width:650px;
+    }
+    /*Cabeçalho*/
     div#ajeitar {
         padding:10px;
         display:flex;
         flex-wrap: wrap;
+        align-items: center;
         margin-bottom:15px;
-        background-color:black;
+        position: relative;
     }
 
     div#centralizar {
         flex-wrap:nowrap;
+        margin-left:10px;
+        margin-top:20px;
     }
+
+    div#nome {
+        position: absolute;
+        top:20%;
+        left:35%;
+        transform:translate(-50%, -50%);
+    }
+
+    div#nome h1 {
+        font-size: 1.8em;
+    }
+
+    div#element {
+        position: absolute;
+        top:15%;
+        left:10%;
+        transform:translate(-50%, -50%);
+    }
+
+    article h2.center {
+        text-align: left;
+        margin-left:10px;
+        font-size:1.2em;
+    }
+    
+    /*Materiais de farm*/
+    div#lista {
+        display:flex;
+    }
+
+    div.duas-prt {
+       width:50%;
+    }
+
+    /*Artefatos*/
+    div.artefatos-2 p.desapareça {
+        display:block;
+    }
+
 
 }
 
