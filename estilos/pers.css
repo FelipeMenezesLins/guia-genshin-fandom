@@ -8,7 +8,7 @@
 
 body {
     height:100vh;
-    background-color:black;
+    background-color:rgb(28, 31, 70);
 }
 
 header {
@@ -84,66 +84,60 @@ main article {
 
 main div#cabeçalho {
     display:flex;
+    justify-content:center;
     margin-bottom:20px;
-    flex-wrap:wrap;
-    flex: 1 1 150px;
+    position: relative;
 }
 
 main img#pers{
     background-image:linear-gradient(to bottom, red,rgb(255, 161, 47));
-    border-radius: 10px;
-    width:150px;
+    border-radius:5px;
+    width:125px;
 }
 
-main > article > div > h1 {
+    div#nome {
+    margin:auto;
+    margin-bottom:10px;
+}
+
+    div#nome h1 {
     color:white;
-    margin-left:20px;
+    text-align: center;
 }
 
 /*Tipo da Arma que o Personagem usa*/
 
-div#arm {
+div#centralizar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+ }
+
+div.arm {
     background-color: rgb(67, 67, 67);
     color:white;
     display: flex;
-    width:150px;
-    height:50px;
+    width:90%;
+    height:45px;
     border-radius:5px;
     padding:5px;
+    justify-content: center;
     align-items:center;
-    margin-top:20px; 
-    margin-right: 10px;
+    margin:5px;
 }
 main img.gun {
     width:50px;
-    background-color:rgb(0, 0, 0);
     margin-right:8px;
     border-radius:5px;
 }
  /*Categória do Personagem, como DPS OU OUTRA COISA*/
- div#if {
-    background-color: rgb(66, 66, 66);
-    padding:10px;
-    width:70px;
-    height:40px;
-    border-radius:5px;
-    margin-top:20px;
-    display: flex;
-    align-items: center;
-}
-
-div#if > p {
-    font-size: 0.9em;
-    color:white;
-}
 
 div#element {
-    display:flex;
-    align-items: center;
-    background-color:rgb(66, 66, 66);
-    border-radius:5px;
-    margin-top:10px;
     padding:10px;
+    position:absolute;
+    top:20%;
+    left:90%;
+    transform: translate(-50%, -50%);
 }
 
 div#element p {
@@ -559,7 +553,7 @@ td img {
 }
 
 footer {
-    background-color: rgb(31, 31, 142);
+    background-color:rgb(36, 40, 90);
     padding:10px;
     color:rgb(177, 177, 177);
     margin-top:20px;
@@ -569,7 +563,7 @@ footer img {
     display:block;
     margin:auto;
     margin-top:20px;
-    background-color: rgb(49, 49, 236);
+    background-color: rgb(42, 42, 182);
     border-radius:50%;
 }
 
@@ -608,5 +602,23 @@ footer div a {
     font-size: 20px;
 }
 
+@media screen and (min-width:768px) and (max-width:992px) {
+    main {
+        max-width:700px;
+    }
+
+    div#ajeitar {
+        padding:10px;
+        display:flex;
+        flex-wrap: wrap;
+        margin-bottom:15px;
+        background-color:black;
+    }
+
+    div#centralizar {
+        flex-wrap:nowrap;
+    }
+
+}
 
 

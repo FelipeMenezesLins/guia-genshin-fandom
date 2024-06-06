@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color:rgb(17, 17, 17);
+    background-color:rgb(28, 31, 70);
     height: 100vh;
 }
 
@@ -79,7 +79,7 @@ menu a:hover {
 }
 
 main {
-    background-color:rgb(24, 24, 113);
+    background-color:rgb(36, 40, 90);
     width:90%;
     margin:auto;
     border-radius:5px;
@@ -96,7 +96,7 @@ main h1 {
 }
 
 main section {
-    background-color:rgb(31, 31, 142);
+    background-color:rgb(36, 40, 90);
     width:90%;
     margin:auto;
     border-radius:5px;
@@ -119,6 +119,7 @@ div.person img{
 
 div.bloco {
    position:relative;
+   margin:10px;
 }
 
 div.avatar img:hover {
@@ -151,7 +152,7 @@ div.nome p {
 }
 
 footer {
-    background-color: rgb(31, 31, 142);
+    background-color:rgb(36, 40, 90);
     padding:10px;
     color:rgb(177, 177, 177);
 }
@@ -160,7 +161,7 @@ footer img {
     display:block;
     margin:auto;
     margin-top:20px;
-    background-color: rgb(49, 49, 236);
+    background-color: rgb(42, 42, 182);
     border-radius:50%;
 }
 
@@ -201,16 +202,126 @@ footer div a {
 
 @media screen and (min-width:768px) and (max-width:992px) {
     main {
-        max-width:800px;
+        max-width:700px;
         margin:auto;
         margin-bottom:20px;
+        margin-top:20px;
     }
 
     main h1 {
         font-size:1.5em;
     }
 
-    main div.avatar img{
-       width:100px;
+    main div.personagens{
+       display:flex;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:350px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    header span.material-icons{
+        display:none;
+    }
+
+    menu#itens {
+        display:block;
+        width:90%;
+        font-size:1em;
+    }
+
+    main {
+        max-width:700px;
+        margin:auto;
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+
+    main h1 {
+        font-size:1.5em;
+    }
+
+    main div.personagens{
+       display:flex;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:350px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    header span.material-icons{
+        display:none;
+    }
+
+    menu#itens {
+        display:block;
+        width:90%;
+        font-size:1em;
+    }
+
+    main {
+        max-width:700px;
+        margin:auto;
+        margin-bottom:20px;
+        margin-top:20px;
+    }
+
+    main h1 {
+        font-size:1.5em;
+    }
+
+    main div.personagens{
+       display:flex;
+       justify-content: center;
+       flex-wrap: wrap;
+    }
+
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:350px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
     }
 }
