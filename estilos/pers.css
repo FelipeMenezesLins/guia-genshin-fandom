@@ -6,9 +6,23 @@
     padding:0px;
 }
 
+:root {
+    /*cores*/
+    --cor1:#101633;
+    --cor2:#1C1F46;
+    --cor3:#24285A;
+    --cor4:#303B7A;
+    --cor5:#4D5FC4;
+    --cor6:#571396;
+    --cor7:#943ae9;
+    --cor8:#613c0c;
+    --cor9:#fbbe3c;
+}
+
+
 body {
     height:100vh;
-    background-color:rgb(28, 31, 70);
+    background-color:#101633;
 }
 
 header {
@@ -68,14 +82,15 @@ menu#itens > ul > li > a {
 }
 
 main {
-    background-color:rgb(39, 38, 38);
+    background-color:#1C1F46;
     padding:15px;
     width:90%;
     margin:auto;
+    border-radius:5px;
 }
 
 main article {
-    background-color:rgb(52, 51, 51);
+    background-color:#24285A;
     padding:10px;
     border-radius:10px;
 }
@@ -90,7 +105,7 @@ main div#cabeçalho {
 }
 
 main img#pers{
-    background-image:linear-gradient(to bottom, red,rgb(255, 161, 47));
+    background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
     border-radius:5px;
     width:125px;
 }
@@ -114,7 +129,7 @@ div#centralizar {
  }
 
 div.arm {
-    background-color: rgb(67, 67, 67);
+    background-color:#303B7A;
     color:white;
     display: flex;
     width:90%;
@@ -150,19 +165,20 @@ div#element img {
 }
 
 main h2 {
-    color:rgb(255, 157, 0);
+    color:white;
     margin-bottom:10px;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /*Lista do Farm do personagem*/
 
 article h2.center {
+    margin-top:10px;
     text-align: center;
 }
 
 div#lista { 
-    background-color: rgb(63, 63, 63);
+    background-color:#24285A;
     display:grid;
     grid-template-columns: 1fr;
     max-width:800px;
@@ -179,7 +195,7 @@ div.duas-prt {
 
 
 div.txt {
-    background-color:gray;
+    background-color:#303B7A;
     border-radius: 5px;
     display:flex;
     justify-content: space-evenly;
@@ -201,9 +217,10 @@ div.txt > p {
 /*Armas do Personagem*/
 
 div#armas {
-    background-color: rgb(81, 81, 81);
+    background-color:#24285A;
     max-width: 800px;
     margin:auto;
+    width:90%;
     display: flex;
     flex-wrap:wrap;
     margin-bottom:10px;
@@ -212,8 +229,8 @@ div#armas {
 }
 
 div#armas > div.alinhar {
-  background-color: black;
-  width:90%;
+  background-color:#303B7A;
+  width:100%;
   padding:10px;
   margin:5px;
   border-radius:5px;
@@ -222,8 +239,8 @@ div#armas > div.alinhar {
 }
 
 div#armas > div.quatro {
-    background-color: black;
-    width:90%;
+    background-color:#303B7A;
+    width:100%;
     padding:10px;
     margin:5px;
     border-radius:5px;
@@ -235,7 +252,7 @@ div.alinhar > p {
     color:white;
     margin-left:10px;
     margin-right: 20px;
-    background-color: orangered;
+    background-color: #24285A;
     padding:15px;
     border-radius: 5px;
 }
@@ -244,27 +261,27 @@ div.quatro > p{
     color:white;
     margin-left:10px;
     margin-right: 20px;
-    background-color: blueviolet;
+    background-color:#24285A;
     padding:15px;
     border-radius: 5px;
 }
 
 div.alinhar img {
     width:50px;
-    background-image: linear-gradient(to bottom, red, rgb(255, 132, 0));
+    background-image: linear-gradient(to bottom, rgb(97, 60, 12), rgb(251, 190, 60));
     border-radius: 5px;
 }
 
 div.quatro img {
     width:50px;
-    background-color:blueviolet;
+    background-image:linear-gradient(to bottom, rgb(87, 19, 150),rgb(148, 58, 233));
     border-radius: 5px;
 }
 
 /*Artefatos do Personagem*/
 
 div#artefato {
-    background-color: rgb(81, 81, 81);
+    background-color:#24285A;
     margin:auto;
     display: flex;
     flex-wrap:wrap;
@@ -275,7 +292,7 @@ div#artefato {
 }
 
 div#artefato > div.ordem {
-    background-color: black;
+    background-color:var(--cor4);
     width:90%;
     padding:10px;
     margin:5px;
@@ -313,7 +330,7 @@ div#artefato > div.ordem {
     color:white;
     margin-left:10px;
     margin-right: 20px;
-    background-color: orangered;
+    background-color:var(--cor3);
     padding:15px;
     border-radius: 5px;
     font-size:.9em
@@ -321,7 +338,7 @@ div#artefato > div.ordem {
 
 div.ordem img {
     width:50px;
-    background-image: linear-gradient(to bottom, red, rgb(255, 102, 0));
+    background-image: linear-gradient(to bottom, var(--cor8), var(--cor9));
     border-radius: 5px;
 }
 
@@ -341,7 +358,7 @@ div.artefatos-2 p.desapareça {
     color:white;
     margin-left:10px;
     margin-right: 20px;
-    background-color: orangered;
+    background-color:var(--cor3);
     padding:15px;
     border-radius: 5px;
     font-size:.9em;
@@ -353,7 +370,7 @@ div.artefatos-2 p.desapareça {
 /*Status do Personagem*/
 
 div#stats {
-    background-color:rgb(81, 81, 81) ;
+    background-color:var(--cor3);
     max-width: 800px;
     margin:auto;
     margin-bottom:10px;
@@ -362,22 +379,33 @@ div#stats {
 }
 
 div#stats > div.stats-o {
-    background-color:black;
+    background-color:var(--cor4);
     color:white;
+    margin:auto;
+    width:85%;
     margin-bottom:10px;
     border-radius:5px;
-    padding:10px;
+    padding:15px;
     text-align: center;
 }
 
 /*Video do Personagem*/
 
-section > h1#aumenta {
-    font-size:1.8em;
-    color:white;
+section#posiçao {
+    border-radius:5px;
+    padding:10px;
+    background-color: var(--cor2);
 }
 
-section > div#video {
+
+h1#aumenta {
+    font-size:1.8em;
+    color:white;
+    margin-left:5px;
+    margin-bottom:5px;
+}
+
+div#video {
     position:relative;
     width:100%;
     height:200px;
@@ -399,8 +427,9 @@ section h2.center {
 }
 
 section > div#teams {
-    background-color: black;
+    background-color:var(--cor2);
     padding:5px;
+    padding-bottom:20px;
     border-radius: 5px;
 }
 
@@ -409,33 +438,64 @@ section > div#teams > h2 {
     margin-top: 5px;
 }
 
+div.equipe {
+   width:100%;
+}
+
 section > div#teams > div.pers {
-    background-color: rgb(255, 140, 0);
+    background-color:var(--cor4);
     display:flex;
+    flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
     border-radius: 5px;
     width:90%;
     padding:5px;
     margin:auto;
+    margin-top:5px;
 }
 
 div.pers > div.laranja img {
     width:60px;
     border-radius: 5px;
-    background-image:linear-gradient(to bottom, rgb(255, 89, 0), red);
+    background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
 }
 
 div.roxo img {
     width:60px;
-    background-color: blueviolet;
+    background-image:linear-gradient(to bottom, var(--cor6), var(--cor7));
     margin-top: 4px;
     margin-bottom:2px;
     border-radius:5px;
 }
 
+div.elemental {
+    position:relative;
+}
+
+div.laranja > div.elemental > div.redondo img{
+    position:absolute;
+    top:10%;
+    left:90%;
+    transform:translate(-50%, -50%);
+    width:20px;
+    padding:2px;
+    border-radius:50%;
+}
+
+div.roxo > div.elemental > div.redondo img{
+    position:absolute;
+    top:10%;
+    left:90%;
+    transform:translate(-50%, -50%);
+    width:20px;
+    padding:2px;
+    border-radius:50%;
+}
+
+/*Talentos do Personagem*/
 div.talents {
-    background-color:rgb(63, 63, 63);
+    background-color:var(--cor2);
     padding:8px;
     border-radius: 5px;
     margin-top:10px;
@@ -447,11 +507,9 @@ section h2.top {
     font-size: 1.3em;
 }
 
-/*Talentos do Personagem*/
-
 div.talento img {
     width:80px;
-    background-color:rgb(103, 102, 102);
+    background-color:var(--cor3);
     border-radius:50%;
     display:block;
     margin:auto;
@@ -488,7 +546,7 @@ div.talento mark {
 
 div.passive1 img {
     width:65px;
-    background-color:rgb(103, 102, 102);
+    background-color:var(--cor3);
     padding:5px;
     padding-right:10px;
     border-radius:50%;
@@ -525,7 +583,7 @@ div.passive1 mark {
 
 div.passive2 img {
     width:70px;
-    background-color:rgb(103, 102, 102);
+    background-color:var(--cor3);
     padding:5px;
     padding-top:15px;
     border-radius:50%;
@@ -567,7 +625,7 @@ div#tabela {
 }
 
 table {
-    background-color: rgb(71, 71, 242);
+    background-color:var(--cor2);
     width:90%;
     margin:auto;
 }
@@ -576,11 +634,11 @@ th {
     color:rgb(233, 232, 232);
     font-size:1.2em;
     padding:10px;
-    background-color: rgb(45, 45, 255);
+    background-color:var(--cor2);
 }
 
 tr {
-    background-color: rgb(99, 99, 247);
+    background-color: var(--cor3);
     color:white;
 }
 
@@ -609,6 +667,20 @@ footer {
     padding:10px;
     color:rgb(177, 177, 177);
     margin-top:20px;
+}
+
+footer img {
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    background-color: rgb(42, 42, 182);
+    border-radius:50%;
+}
+
+footer {
+    background-color:rgb(36, 40, 90);
+    padding:10px;
+    color:rgb(177, 177, 177);
 }
 
 footer img {
@@ -715,7 +787,80 @@ footer div a {
         display:block;
     }
 
+    /*Video do personagem*/
+    section#posiçao {
+        height:400px;
+        background-color: #101633;
+    }
 
+    div#video {
+        height:400px;
+    }
+
+
+    div#video iframe {
+        height:340px;
+        width:610px;
+    }
+
+    /*Time pro personagem*/
+
+    section > div#teams {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    section > div#teams > div.pers {
+        width:275px;
+        margin:0px;
+        margin-top:10px;
+    }
+
+    /*Talentos do personagem*/
+
+    div.talento {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    div.text-talent {
+        width:70%;
+    }
+
+    /*Passivas*/
+
+    div.passive1 {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+
+    div.passive2 {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    /*footer*/
+    
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:350px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
 }
 
 
