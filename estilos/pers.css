@@ -181,7 +181,7 @@ div#lista {
     background-color:#24285A;
     display:grid;
     grid-template-columns: 1fr;
-    max-width:800px;
+    max-width:900px;
     margin:auto;
     border-radius: 5px;
     margin-bottom:10px;
@@ -371,7 +371,7 @@ div.artefatos-2 p.desapareça {
 
 div#stats {
     background-color:var(--cor3);
-    max-width: 800px;
+    max-width:900px;
     margin:auto;
     margin-bottom:10px;
     padding:10px;
@@ -379,6 +379,17 @@ div#stats {
 }
 
 div#stats > div.stats-o {
+    background-color:var(--cor4);
+    color:white;
+    margin:auto;
+    width:85%;
+    margin-bottom:10px;
+    border-radius:5px;
+    padding:15px;
+    text-align: center;
+}
+
+div.stats-1 {
     background-color:var(--cor4);
     color:white;
     margin:auto;
@@ -771,11 +782,13 @@ footer div a {
         text-align: left;
         margin-left:10px;
         font-size:1.2em;
+        width:100%;
     }
     
     /*Materiais de farm*/
     div#lista {
         display:flex;
+        flex-wrap: wrap;
     }
 
     div.duas-prt {
@@ -863,4 +876,414 @@ footer div a {
     }
 }
 
+@media screen and (min-width:992px) and (max-width:1200px) {
+    main {
+        width:950px;
+    }
 
+    /*Cabeçalho*/
+    div#ajeitar {
+        padding:10px;
+        margin-left:15px;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom:15px;
+        position: relative;
+    }
+
+    div#centralizar {
+        flex-wrap:nowrap;
+        margin-left:10px;
+        margin-top:20px;
+    }
+
+    div#nome {
+        position: absolute;
+        top:20%;
+        left:22%;
+        transform:translate(-50%, -50%);
+    }
+
+    div#nome h1 {
+        font-size: 1.8em;
+    }
+
+    div#element {
+        position: absolute;
+        top:15%;
+        left:10%;
+        transform:translate(-50%, -50%);
+    }
+    
+    /*Materiais de farm*/
+
+        div#lista {
+        display:flex;
+        flex-wrap:wrap;
+        width:100%;
+    }
+
+    div.duas-prt {
+       display:flex;
+       justify-content: space-between;
+       width:100%;
+    }
+
+    div.txt {
+      width:100%;
+    }
+
+    article h2.center {
+        text-align: left;
+        margin-left:10px;
+        font-size:1.3em;
+    }
+
+
+     /*Artefatos e Armas*/
+     div#duas-prt2 {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:90%;
+        margin:auto;
+        margin-top:15px;
+    }
+    
+    div#duas-prt2  section#lista-armas{
+        width:40%;
+    }
+
+    div#duas-prt2 section#lista-artefato {
+        width:60%;
+    }
+
+    div#armas {
+        width:90%;
+    }
+
+    div#artefato {
+        width:100%;
+    }
+
+
+     section div#armas h2 {
+        text-align: center;
+        width:100%;
+        font-size:1.3em;
+    }
+
+     section div#artefato h2 {
+        text-align: center;
+        width:100%;
+        font-size:1.3em;
+    }
+
+    /*Artefatos*/
+    div.artefatos-2 p.desapareça {
+        display:block;
+        font-size:.9em;
+    }
+
+    /*Status do personagem*/
+
+    section#status h2 {
+        font-size:1.2em;
+        margin-left:10px;
+    }
+
+    div#stats {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+     div#stats div.stats-o {
+        width:267px;
+    }
+
+    div#stats div.stats-1 {
+        width:100%;
+    }
+
+    /*Video do personagem*/
+    section#posiçao {
+        height:600px;
+        background-color: #101633;
+    }
+
+    div#video {
+        height:600px;
+    }
+
+
+    div#video iframe {
+        height:550px;
+        width:900px;
+    }
+
+    /*Time pro personagem*/
+
+    section > div#teams {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    section > div#teams > div.pers {
+        width:275px;
+        margin:0px;
+        margin-top:10px;
+    }
+
+    /*Talentos do personagem*/
+
+    div.talento {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    div.text-talent {
+        width:70%;
+    }
+
+    /*Passivas*/
+
+    div.passive1 {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+
+    div.passive2 {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    /*footer*/
+    
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:350px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main {
+        width:950px;
+    }
+
+    /*Cabeçalho*/
+    div#ajeitar {
+        padding:10px;
+        margin-left:15px;
+        display:flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom:15px;
+        position: relative;
+    }
+
+    div#centralizar {
+        flex-wrap:nowrap;
+        margin-left:10px;
+        margin-top:20px;
+    }
+
+    div#nome {
+        position: absolute;
+        top:20%;
+        left:22%;
+        transform:translate(-50%, -50%);
+    }
+
+    div#nome h1 {
+        font-size: 1.8em;
+    }
+
+    div#element {
+        position: absolute;
+        top:15%;
+        left:10%;
+        transform:translate(-50%, -50%);
+    }
+    
+    /*Materiais de farm*/
+
+        div#lista {
+        display:flex;
+        flex-wrap:wrap;
+        width:100%;
+    }
+
+    div.duas-prt {
+       display:flex;
+       justify-content: space-between;
+       width:100%;
+    }
+
+    div.txt {
+      width:100%;
+    }
+
+    article h2.center {
+        text-align: left;
+        margin-left:10px;
+        font-size:1.3em;
+    }
+
+
+     /*Artefatos e Armas*/
+     div#duas-prt2 {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:90%;
+        margin:auto;
+        margin-top:15px;
+    }
+    
+    div#duas-prt2  section#lista-armas{
+        width:40%;
+    }
+
+    div#duas-prt2 section#lista-artefato {
+        width:60%;
+    }
+
+    div#armas {
+        width:90%;
+    }
+
+    div#artefato {
+        width:100%;
+    }
+
+
+     section div#armas h2 {
+        text-align: center;
+        width:100%;
+        font-size:1.3em;
+    }
+
+     section div#artefato h2 {
+        text-align: center;
+        width:100%;
+        font-size:1.3em;
+    }
+
+    /*Artefatos*/
+    div.artefatos-2 p.desapareça {
+        display:block;
+        font-size:.9em;
+    }
+
+    /*Status do personagem*/
+
+    section#status h2 {
+        font-size:1.2em;
+        margin-left:10px;
+    }
+
+    div#stats {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+     div#stats div.stats-o {
+        width:267px;
+    }
+
+    div#stats div.stats-1 {
+        width:100%;
+    }
+
+    /*Video do personagem*/
+    section#posiçao {
+        height:600px;
+        background-color: #101633;
+    }
+
+    div#video {
+        height:600px;
+    }
+
+
+    div#video iframe {
+        height:550px;
+        width:900px;
+    }
+
+    /*Time pro personagem*/
+
+    section > div#teams {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+    }
+
+    section > div#teams > div.pers {
+        width:275px;
+        margin:0px;
+        margin-top:10px;
+    }
+
+    /*Talentos do personagem*/
+
+    div.talento {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    div.text-talent {
+        width:70%;
+    }
+
+    /*Passivas*/
+
+    div.passive1 {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+
+    div.passive2 {
+        display:flex;
+        align-items:center;
+        justify-content: space-around;
+    }
+
+    /*footer*/
+    
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:900px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:500px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
+}

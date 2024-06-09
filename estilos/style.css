@@ -10,6 +10,19 @@
     padding:0px;
 }
 
+:root {
+    /*cores*/
+    --cor1:#101633;
+    --cor2:#1C1F46;
+    --cor3:#24285A;
+    --cor4:#303B7A;
+    --cor5:#4D5FC4;
+    --cor6:#571396;
+    --cor7:#943ae9;
+    --cor8:#613c0c;
+    --cor9:#fbbe3c;
+}
+
 body {
     background-color:rgb(28, 31, 70);
     height: 100vh;
@@ -52,7 +65,7 @@ menu#itens {
     margin:auto;
     width:90%;
     height:45px;
-    border:1px solid rgb(32, 63, 121);
+    border-top:1px solid rgb(32, 63, 121);
 }
 
 menu ul {
@@ -109,7 +122,7 @@ div.person {
 }
 
 div.person img{
-    background-image:linear-gradient(to bottom, red,rgb(255, 161, 47));
+    background-image:linear-gradient(to bottom,var(--cor8), var(--cor9));
     display:block;
     margin:auto;
     margin-bottom:40px;
@@ -243,7 +256,7 @@ footer div a {
 
     menu#itens {
         display:block;
-        width:90%;
+        width:100%;
         font-size:1em;
     }
 
@@ -288,7 +301,7 @@ footer div a {
 
     menu#itens {
         display:block;
-        width:90%;
+        width:100%;
         font-size:1em;
     }
 
