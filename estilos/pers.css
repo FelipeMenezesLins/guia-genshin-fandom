@@ -1,4 +1,9 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family:'lemon';
+    src: url(../fontes/LEMONMILK-Regular.otf);
+}
  
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -26,7 +31,7 @@ body {
 }
 
 header {
-    background-color:rgb(51, 51, 203);
+    background-color:var(--cor4);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +49,7 @@ header h1 {
     color:white;
     margin:5px;
     font-size:1.3em;
+    font-family:'lemon';
 }
 
 header img {
@@ -466,10 +472,36 @@ section > div#teams > div.pers {
     margin-top:5px;
 }
 
-div.pers > div.laranja img {
+    div.laranja img {
     width:60px;
     border-radius: 5px;
     background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
+}
+
+div.juntos {
+    position:relative;
+}
+
+
+div.redondo img {
+    position:absolute;
+    top:15%;
+    left:90%;
+    transform:translate(-50%, -50%);
+    width:20px;
+    padding:2px;
+    border-radius:50%;
+    background-color: black;
+}
+
+div.redondo2 img {
+    position:absolute;
+    top:0%;
+    left:70%;
+    width:20px;
+    padding:2px;
+    border-radius:50%;
+    background-color: black;
 }
 
 div.roxo img {
@@ -478,30 +510,6 @@ div.roxo img {
     margin-top: 4px;
     margin-bottom:2px;
     border-radius:5px;
-}
-
-div.elemental {
-    position:relative;
-}
-
-div.laranja > div.elemental > div.redondo img{
-    position:absolute;
-    top:10%;
-    left:90%;
-    transform:translate(-50%, -50%);
-    width:20px;
-    padding:2px;
-    border-radius:50%;
-}
-
-div.roxo > div.elemental > div.redondo img{
-    position:absolute;
-    top:10%;
-    left:90%;
-    transform:translate(-50%, -50%);
-    width:20px;
-    padding:2px;
-    border-radius:50%;
 }
 
 /*Talentos do Personagem*/

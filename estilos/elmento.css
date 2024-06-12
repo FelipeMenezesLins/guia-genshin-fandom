@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'lemon';
+    src: url(../fontes/LEMONMILK-Regular.otf);
+}
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+:root {
+    /*cores*/
+    --cor1:#101633;
+    --cor2:#1C1F46;
+    --cor3:#24285A;
+    --cor4:#303B7A;
+    --cor5:#4D5FC4;
+    --cor6:#571396;
+    --cor7:#943ae9;
+    --cor8:#613c0c;
+    --cor9:#fbbe3c;
+}
+
+body {
+    background-color:rgb(28, 31, 70);
+    height: 100vh;
+}
+
+header {
+    background-color:var(--cor4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    height:45px;
+}
+
+header section#title {
+    display:flex;
+    align-items:center;
+}
+
+header h1 {
+    color:white;
+    margin:5px;
+    font-size:1.3em;
+    font-family:'lemon';
+}
+
+header img {
+    width:100px;
+    margin:5px;
+}
+
+header span {
+    color:rgb(214, 212, 212);
+    cursor:pointer;
+}
+
+menu#itens {
+    display:none;
+    background-color:var(--cor4);
+    margin:auto;
+    width:100%;
+    height:45px;
+    border-top:1px solid var(--cor2);
+}
+
+menu ul {
+    display:flex;
+    height:100%;
+    list-style-type:none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+menu li {
+    background-color:var(--cor4);
+    padding:5px;
+    
+}
+
+menu a {
+    color:white;
+    text-decoration:none;
+}
+
+menu a:hover {
+    color:rgb(214, 212, 212);
+}
