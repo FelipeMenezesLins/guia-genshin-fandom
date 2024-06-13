@@ -90,3 +90,161 @@ menu a {
 menu a:hover {
     color:rgb(214, 212, 212);
 }
+
+main {
+    background-color:var(--cor3);
+    margin-top:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+article {
+    width:90%;
+    margin:auto;
+    background-color:var(--cor4);
+    padding:10px;
+    border-radius:5px;
+}
+
+
+main section {
+    margin-top:20px;
+}
+
+article h1 {
+    color:white;
+    font-size:1.3em;
+}
+
+article h3 {
+    color:white;
+    margin-bottom:5px;
+}
+
+
+article p {
+    color:rgb(190, 188, 188);
+    line-height:1.2em;
+}
+
+div.tabela {
+    overflow-x:auto;
+}
+
+table {
+    background-color:var(--cor2);
+    width:800px;
+}
+
+th {
+    color:rgb(233, 232, 232);
+    font-size:1.2em;
+    padding:10px;
+    background-color:var(--cor2);
+}
+
+tr {
+    background-color: var(--cor3);
+    color:white;
+}
+
+
+td {
+  text-align: center;
+  padding:15px;
+}
+
+
+
+div#nome {
+    width:40px;
+    margin:auto;
+}
+
+ td  img {
+    width:35px;
+    display:block;
+    margin:auto;
+}
+
+td.elementos {
+    display:flex;
+    align-items:center;
+    padding:10px;
+}
+
+mark.e1 {
+    color:rgb(194, 56, 248);
+    background:none;
+}
+
+mark.e2 {
+    color:rgb(248, 56, 56);
+    background:none;
+}
+
+mark.e3 {
+    color:rgb(174, 225, 241);
+    background:none;
+}
+
+mark.e4 {
+    color:rgb(105, 255, 118);
+    background:none;
+}
+
+footer {
+    background-color:var(--cor3);
+    padding:10px;
+    color:rgb(177, 177, 177);
+    margin-top:40px;
+}
+
+
+footer article {
+    background-color:var(--cor3);
+}
+
+footer img {
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    background-color: rgb(42, 42, 182);
+    border-radius:50%;
+}
+
+footer h1 {
+    color:white;
+    margin-bottom:10px;
+}
+
+footer h3 {
+ font-size:16px;
+ margin-top:16px;
+ margin-bottom:30px;
+}
+
+footer section#final {
+    display:flex;
+    justify-content: space-around;
+}
+
+footer div {
+    margin-left:20px;
+}
+
+footer div h6 {
+    color:white;
+    font-size:20px;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div a {
+    color:rgb(177, 177, 177);
+    text-decoration:none;
+    font-size: 20px;
+}
+
