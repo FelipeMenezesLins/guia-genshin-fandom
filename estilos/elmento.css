@@ -24,7 +24,7 @@
 }
 
 body {
-    background-color:rgb(28, 31, 70);
+    background-color:var(--cor1);
     height: 100vh;
 }
 
@@ -92,18 +92,21 @@ menu a:hover {
 }
 
 main {
-    background-color:var(--cor3);
-    margin-top:20px;
-    padding-top:10px;
-    padding-bottom:10px;
+    background-color:var(--cor2);
+    padding:15px;
+    width:90%;
+    margin:auto;
+    border-radius:5px;
+    margin-top:40px;
 }
 
 article {
     width:90%;
     margin:auto;
-    background-color:var(--cor4);
+    background-color:var(--cor3);
     padding:10px;
     border-radius:5px;
+    margin-top:15px;
 }
 
 
@@ -173,6 +176,18 @@ td.elementos {
     padding:10px;
 }
 
+td.elementos-2 {
+    display: flex;
+    align-items: center;
+    margin-top:15px;
+}
+
+td.elementos-3 {
+    display: flex;
+    align-items: center;
+    margin-top:28px;
+}
+
 mark.e1 {
     color:rgb(194, 56, 248);
     background:none;
@@ -184,12 +199,22 @@ mark.e2 {
 }
 
 mark.e3 {
-    color:rgb(174, 225, 241);
+    color:rgb(148, 227, 251);
     background:none;
 }
 
 mark.e4 {
     color:rgb(105, 255, 118);
+    background:none;
+}
+
+mark.e5 {
+    color:yellow;
+    background:none;
+}
+
+mark.e6 {
+    color:rgb(31, 154, 255);
     background:none;
 }
 
@@ -200,9 +225,13 @@ footer {
     margin-top:40px;
 }
 
-
 footer article {
-    background-color:var(--cor3);
+    background-color: #24285A;
+}
+
+div.text-footer {
+    width:100%;
+    margin:auto;
 }
 
 footer img {
@@ -248,3 +277,29 @@ footer div a {
     font-size: 20px;
 }
 
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    main {
+        max-width:900px;
+        margin:auto;
+        margin-top:40px;
+    }
+
+
+
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:300px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
+}
