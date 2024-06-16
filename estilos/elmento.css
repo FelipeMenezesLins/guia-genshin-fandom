@@ -98,6 +98,7 @@ main {
     margin:auto;
     border-radius:5px;
     margin-top:40px;
+    margin-bottom:40px;
 }
 
 article {
@@ -137,6 +138,7 @@ div.tabela {
 table {
     background-color:var(--cor2);
     width:800px;
+    margin:auto;
 }
 
 th {
@@ -219,19 +221,13 @@ mark.e6 {
 }
 
 footer {
-    background-color:var(--cor3);
+    background-color:rgb(36, 40, 90);
     padding:10px;
     color:rgb(177, 177, 177);
-    margin-top:40px;
 }
 
 footer article {
-    background-color: #24285A;
-}
-
-div.text-footer {
-    width:100%;
-    margin:auto;
+    margin:0px;
 }
 
 footer img {
@@ -283,8 +279,42 @@ footer div a {
         max-width:900px;
         margin:auto;
         margin-top:40px;
+        margin-bottom:40px;
     }
 
+    div.table {
+        margin:auto;
+    }
+
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:350px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+
+    main {
+        max-width:900px;
+        margin:auto;
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+
+    div.table {
+        margin:auto;
+    }
 
 
     footer article{
@@ -295,7 +325,42 @@ footer div a {
     }
 
     footer div.text-footer {
-        width:300px;
+        width:350px;
+    }
+
+    footer div.links {
+        line-height:2em;
+        margin-right:10px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+
+    span.material-icons {
+        display:none;
+    }
+
+    menu#itens {
+        display:block;
+    }
+
+    main {
+        max-width:900px;
+        margin:auto;
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+
+    footer article{
+        display:flex;
+        flex-wrap: wrap;
+        max-width:800px;
+        margin:auto;
+    }
+
+    footer div.text-footer {
+        width:350px;
     }
 
     footer div.links {
