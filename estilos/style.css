@@ -91,9 +91,51 @@ menu a:hover {
     color:rgb(214, 212, 212);
 }
 
+/*Menu de seleção*/
+div#seleçao {
+    background-color: var(--cor4);
+    width:90%;
+    margin:auto;
+    margin-top:20px;
+    border-radius:5px;
+}
+
+div#raridade {
+    border-bottom:1px solid var(--cor2);
+    text-align: center;
+}
+
+div#raridade img {
+   width:40px;
+   cursor:pointer;
+}
+
+div#elementos-1 {
+    border-bottom:1px solid var(--cor2);
+    text-align: center;
+}
+
+div#elementos-1 img {
+    width:40px;
+    cursor:pointer;
+}
+
+div#armas-1 {
+    border-bottom:1px solid var(--cor2);
+    text-align: center;
+}
+
+div#armas-1 img {
+    width:40px;
+    cursor:pointer;
+}
+
+
+/*Conteúdo principal*/
+
 main {
     background-color:rgb(36, 40, 90);
-    width:90%;
+    width:80%;
     margin:auto;
     border-radius:5px;
     padding:10px;
@@ -116,10 +158,18 @@ main section {
     padding:10px;
 }
 
+div.personagens {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+
 div.person {
     display:flex;
     justify-content: space-between;
 }
+
 
 div.person img{
     background-image:linear-gradient(to bottom,var(--cor8), var(--cor9));
@@ -214,6 +264,33 @@ footer div a {
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
+
+    div#seleçao {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:5px;
+        max-width:720px;
+    }
+
+    div#raridade {
+        border-right:1px solid var(--cor1);
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
+    div#elementos-1 {
+        border-right:1px solid var(--cor1);
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
+    div#armas-1 {
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
+
     main {
         max-width:700px;
         margin:auto;
@@ -252,6 +329,31 @@ footer div a {
 
     header span.material-icons{
         display:none;
+    }
+
+    div#seleçao {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:5px;
+        max-width:720px;
+    }
+
+    div#raridade {
+        border-right:1px solid var(--cor1);
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
+    div#elementos-1 {
+        border-right:1px solid var(--cor1);
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
+    div#armas-1 {
+        border-bottom:0px;
+        padding-right:5px;
     }
 
     menu#itens {
@@ -304,6 +406,32 @@ footer div a {
         width:100%;
         font-size:1em;
     }
+
+    div#seleçao {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:5px;
+        max-width:720px;
+    }
+
+    div#raridade {
+        border-right:1px solid var(--cor1);
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
+    div#elementos-1 {
+        border-right:1px solid var(--cor1);
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
+    div#armas-1 {
+        border-bottom:0px;
+        padding-right:5px;
+    }
+
 
     main {
         max-width:700px;
