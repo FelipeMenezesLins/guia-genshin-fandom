@@ -603,11 +603,7 @@ div.passive1 p {
     line-height: 1.3em;
 }
 
-div.passive1 mark {
-    background:none;
-    border-radius:5px;
-    color:rgb(246, 55, 55);  
-}
+
 
 div.passive2 img {
     width:70px;
@@ -638,12 +634,6 @@ div.passive2 p {
     margin-left:5px;
     text-align:justify;
     line-height: 1.3em;
-}
-
-div.passive2 mark {
-    background:none;
-    border-radius:5px;
-    color:rgb(246, 55, 55);  
 }
 
 /*Acensão do Personagem*/
@@ -752,6 +742,44 @@ footer div a {
     color:rgb(177, 177, 177);
     text-decoration:none;
     font-size: 20px;
+}
+
+section mark.e {
+    background:none;
+    border-radius:5px;
+    color:rgb(194, 56, 248);
+}
+
+
+section mark.p {
+    background:none;
+    border-radius:5px;
+    color:rgb(246, 55, 55);  
+}
+
+section mark.c {
+    color:rgb(148, 227, 251);
+    background:none;
+}
+
+section mark.d {
+    color:rgb(105, 255, 118);
+    background:none;
+}
+
+section mark.g {
+    color:yellow;
+    background:none;
+}
+
+section mark.h {
+    color:rgb(31, 154, 255);
+    background:none;
+}
+
+section mark.a {
+    color:rgb(31, 255, 169);
+    background:none;
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {

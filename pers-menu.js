@@ -1,6 +1,6 @@
 let star5 = document.getElementById('star-5')
 let star4 = document.getElementById('star-4')
-
+let fogo = document.getElementsByName('pyro')
 
 function cinco() {
     if(star5.style.display == 'none'){
@@ -18,4 +18,8 @@ function quatro() {
     } else {
         star5.style.display = 'none'
     }
+}
+
+function pyro() {
+    
 }
