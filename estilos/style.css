@@ -150,8 +150,14 @@ main h1 {
     text-align: center;
 }
 
-main section {
-    background-color:rgb(36, 40, 90);
+main section#star-5 {
+    width:90%;
+    margin:auto;
+    border-radius:5px;
+    padding:10px;
+}
+
+main section#star-4 {
     width:90%;
     margin:auto;
     border-radius:5px;
@@ -170,9 +176,23 @@ div.person {
     justify-content: space-between;
 }
 
+div.person-roxo {
+    display:flex;
+    justify-content:space-between;
+}
+
 
 div.person img{
     background-image:linear-gradient(to bottom,var(--cor8), var(--cor9));
+    display:block;
+    margin:auto;
+    margin-bottom:40px;
+    width:80px;
+    border-radius:5px;
+}
+
+div.person-roxo img {
+    background-image:linear-gradient(to bottom,var(--cor6), var(--cor7));
     display:block;
     margin:auto;
     margin-bottom:40px;
@@ -188,7 +208,7 @@ div.bloco {
 div.avatar img:hover {
     width:85px;
     transition: transform .3s;
-    transform:translate(-0px, -2px);
+    transform:translate(-2px);
 }
 
 div.elemento img{
@@ -292,7 +312,7 @@ footer div a {
 
 
     main {
-        max-width:700px;
+        width:700px;
         margin:auto;
         margin-bottom:20px;
         margin-top:20px;

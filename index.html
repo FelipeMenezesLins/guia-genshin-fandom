@@ -42,8 +42,8 @@
            </menu>
            <div id="seleçao">
             <div id="raridade">
-                <img src="imagens/rarity_4.png">
-                <img src="imagens/rarity_5.png">
+                <img src="imagens/rarity_4.png" onclick="quatro()">
+                <img src="imagens/rarity_5.png" onclick="cinco()">
             </div>
             <div id="elementos-1">
                 <img src="imagens/elemento/Element_Anemo.png">
@@ -52,7 +52,9 @@
                 <img src="imagens/elemento/Element_Dendro.png">
                 <img src="imagens/elemento/Element_Geo.png">
                 <img src="imagens/elemento/Element_Hydro.png">
+
                 <img src="imagens/elemento/Element_Pyro.png">
+                
             </div>
             <div id="armas-1">
                 <img src="imagens/armas/arco-simples.png">
@@ -64,10 +66,10 @@
         </div>
     <main>
         <h1>Genshin Impact lista de personagens</h1>
-        <section>
+        <section id="star-5">
             <div class="personagens">
                 <div class="person">
-                    <div class="bloco">
+                    <div class="bloco" id="pyro">
                         <a href="pers/lyney1.html">
                             <div class="avatar">
                                 <img src="imagens/personagens/Lyney.png" alt="lynei">
@@ -94,7 +96,7 @@
                         </a>
                     </div>
                     <div class="bloco">
-                        <a href="lynei.html">
+                        <a href="pers/kazuha.html">
                             <div class="avatar">
                                 <img src="imagens/personagens/Kazuha.png" alt="lynei">
                             </div>
@@ -230,15 +232,13 @@
                         </a>
                     </div>
             </div>
-
-
-            <!--Da uma atenção nessa div-->
-
-
-            <div class="person">
+        </section>
+        <section id="star-4">
+        <div class="personagens">
+            <div class="person-roxo">
                 <div class="bloco">
-                    <a href="lynei.html">
-                        <div class="avatar-1">
+                    <a href="#">
+                        <div class="avatar">
                             <img src="imagens/personagens/Bennett.png">
                         </div>
                         <div class="nome">
@@ -250,12 +250,12 @@
                     </a>
                 </div>
                 <div class="bloco">
-                    <a href="lynei.html">
+                    <a href="#">
                         <div class="avatar">
-                            <img src="imagens/personagens/Dehya.png" alt="lynei">
+                            <img src="imagens/personagens/Xiangling.png">
                         </div>
                         <div class="nome">
-                            <p>Dehya</p>
+                            <p>Xiangling</p>
                         </div>
                         <div class="elemento">
                             <img src="imagens/elemento/Element_Pyro.png">
@@ -263,18 +263,19 @@
                     </a>
                 </div>
                 <div class="bloco">
-                    <a href="lynei.html">
+                    <a href="#">
                         <div class="avatar">
-                            <img src="imagens/personagens/hutaoprs.png" alt="lynei">
+                            <img src="imagens/personagens/Xingqiu.png">
                         </div>
                         <div class="nome">
-                            <p>Hutao</p>
+                            <p>Xingqiu</p>
                         </div>
                         <div class="elemento">
-                            <img src="imagens/elemento/Element_Pyro.png">
+                            <img src="imagens/elemento/Element_Hydro.png">
                         </div>
                     </a>
                 </div>
+             </div>   
         </section>
     </main>
     <footer>
@@ -311,7 +312,7 @@
             <img src="imagens/personagens/Bennett.png" alt="">
         </article>
     </footer>  
-    <script>
+<script>
     function clickMenu() {
         if(itens.style.display == 'block') {
             itens.style.display = 'none'
@@ -320,5 +321,6 @@
         }
     }
 </script>
+<script src="pers-menu.js"></script>
 </body>
 </html>
