@@ -1,8 +1,8 @@
 @charset "UTF-8";
  
 @font-face {
-    font-family:'lemon';
-    src: url(../fontes/LEMONMILK-Regular.otf);
+    font-family:'gamaamli';
+    src: url(../fontes/GaMaamli-Regular.ttf);
 }
 * {
     font-family:Arial, Helvetica, sans-serif;
@@ -34,7 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding:5px;
-    height:45px;
+    height:50px;
 }
 
 header section#title {
@@ -43,15 +43,35 @@ header section#title {
 }
 
 header h1 {
-    color:white;
-    margin:5px;
-    font-size:1.3em;
-    font-family:'lemon';
+    color:rgb(239, 241, 218);
+    margin:5px 10px;
+    font-size:1.5em;
+    font-family:'gamaamli';
 }
 
 header img {
-    width:100px;
+    width:45px;
     margin:5px;
+    background-color:var(--cor5);
+    padding:5px;
+    border-radius:50%;
+}
+
+header a {
+    display:flex;
+    color:white;
+    text-decoration: none;
+    align-items: center;
+}
+
+header a:hover {
+    color:var(--cor2);
+}
+
+header a p {
+    background-color:var(--cor5);
+    padding:10px;
+    border-radius:5px;
 }
 
 header span {
@@ -78,8 +98,7 @@ menu ul {
 
 menu li {
     background-color:var(--cor4);
-    padding:5px;
-    
+    padding:5px; 
 }
 
 menu a {
@@ -163,23 +182,13 @@ main section#star-5 {
     width:100%;
 }
 
-main section#star-4 {
-    width:90%;
-    margin:auto;
-    border-radius:5px;
-    padding:10px;
-    display:flex;
-    flex-wrap: wrap;
-    width:100%;
-}
-
 div.avatar-1 img  {
     background-image:linear-gradient(to bottom,var(--cor6), var(--cor7));
-    border-radius:10px;
+    border-radius:5px;
 }
 div.avatar {
     background-image:linear-gradient(to bottom,var(--cor8), var(--cor9));
-    border-radius:10px;
+    border-radius:5px;
 }
 
 div.bloco  {
@@ -194,16 +203,14 @@ div.bloco img {
     width:65px;
 }
 
-div.avatar img:hover {
-    width:68px;
+div.avatar:hover  {
     transition: transform .3s;
-    transform:translate(-2px);
+    transform:translate(-2px, -2px);
 }
 
-div.avatar-1 img:hover {
-    width:68px;
-    transition: transform .3s;
-    transform:translate(-2px);
+div.avatar-1:hover {
+    transition: transform .2s;
+    transform:translate(-2px, -2px);
 }
 
 div.elemento img{
@@ -382,6 +389,16 @@ footer div a {
        flex-wrap: wrap;
     }
 
+    menu ul {
+        justify-content: left;
+        padding:0px;
+    }
+
+    menu li {
+        margin-left:10px;
+        padding:10px;
+    }
+
     footer article{
         display:flex;
         flex-wrap: wrap;
@@ -453,6 +470,16 @@ footer div a {
        flex-wrap: wrap;
     }
 
+    menu ul {
+        justify-content: left;
+        padding:0px;
+    }
+
+    menu li {
+        margin-left:10px;
+        padding:10px;
+    }
+
     footer article{
         display:flex;
         flex-wrap: wrap;
@@ -522,6 +549,16 @@ footer div a {
        display:flex;
        justify-content: center;
        flex-wrap: wrap;
+    }
+
+    menu ul {
+        justify-content: left;
+        padding:0px;
+    }
+
+    menu li {
+        margin-left:10px;
+        padding:10px;
     }
 
     footer article{
