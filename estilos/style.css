@@ -40,17 +40,18 @@ header {
 header section#title {
     display:flex;
     align-items:center;
+    margin-right:10px;
 }
 
 header h1 {
     color:rgb(239, 241, 218);
-    margin:5px 10px;
-    font-size:1.5em;
+    margin:5px;
+    font-size:1em;
     font-family:'gamaamli';
 }
 
 header img {
-    width:45px;
+    width:35px;
     margin:5px;
     background-color:var(--cor5);
     padding:5px;
@@ -71,6 +72,7 @@ header a:hover {
 header a p {
     background-color:var(--cor5);
     padding:10px;
+    font-size:0.8em;
     border-radius:5px;
 }
 
@@ -157,12 +159,12 @@ div#seleçao img:hover {
 /*Conteúdo principal*/
 
 main {
-    background-color:rgb(36, 40, 90);
-    max-width:280px;
-    margin:auto;
+    background-color:var(--cor3);
+    max-width:315px;
     border-radius:5px;
-    padding:10px;
     margin: 40px auto;
+    padding:5px;
+    box-shadow:1px 1px 5px rgba(0, 0, 0, 0.084);
 }
 
 main h1 {
@@ -172,14 +174,14 @@ main h1 {
     text-align: center;
 }
 
-main section#star-5 {
+ section#star-5 {
     width:90%;
-    margin:auto;
+    margin:20px auto;
     border-radius:5px;
-    padding:10px;
+    padding:12px;
     display:flex;
     flex-wrap: wrap;
-    width:100%;
+    background-color: var(--cor4);
 }
 
 div.avatar-1 img  {
@@ -193,14 +195,14 @@ div.avatar {
 
 div.bloco  {
    position:relative;
+   margin:auto;
    margin:10px;
 }
 
 div.bloco img {
     display:block;
-    margin:auto;
     margin-bottom:40px;
-    width:65px;
+    width:50px;
 }
 
 div.avatar:hover  {
@@ -214,7 +216,7 @@ div.avatar-1:hover {
 }
 
 div.elemento img{
-    background:rgb(15, 15, 15);
+    background:var(--cor2);
     width:20px;
     border-radius:50%;
     padding:5px;
@@ -287,6 +289,9 @@ footer div a {
 }
 
 @media screen and (min-width:600px) and (max-width:768px) {
+    header h1 {
+        font-size:1.5em;
+    }
     div#seleçao {
         display:flex;
         justify-content: space-around;
@@ -325,15 +330,47 @@ footer div a {
     }
 
     main {
-        max-width:450px;
+        max-width:475px;
         margin:auto;
         margin-bottom:20px;
         margin-top:20px;
     }
 
+    main h1 {
+        font-size:1.2em;
+    }
+
+    div.bloco img {
+        width:65px;
+    }
+
+    div.elemento img{
+        background:var(--cor2);
+        width:20px;
+        border-radius:50%;
+        padding:5px;
+        position:absolute;
+        top:10%;
+        left:90%;
+        transform:translate(-50%, -50%);
+    }
+
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
+
+    header h1 {
+        font-size:1.5em;
+    }
+
+    header img {
+        width:45px;
+    }
+
+    header a p {
+        font-size:1em;
+    }
+
 
     div#seleçao {
         display:flex;
@@ -350,7 +387,7 @@ footer div a {
     }
 
     div#raridade img {
-        width:40px;
+        width:30px;
     }
 
     div#elementos-1 {
@@ -360,7 +397,7 @@ footer div a {
     }
 
     div#elementos-1 img{
-        width:40px;
+        width:30px;
     }
 
     div#armas-1 {
@@ -369,7 +406,7 @@ footer div a {
     }
 
     div#armas-1 img {
-        width:40px;
+        width:30px;
     }
 
     main {
@@ -380,13 +417,22 @@ footer div a {
     }
 
     main h1 {
-        font-size:1.5em;
+        font-size:1.2em;
     }
 
-    main div.personagens{
-       display:flex;
-       justify-content: center;
-       flex-wrap: wrap;
+    div.bloco img {
+        width:70px;
+    }
+
+    div.elemento img{
+        background:var(--cor2);
+        width:20px;
+        border-radius:50%;
+        padding:5px;
+        position:absolute;
+        top:10%;
+        left:90%;
+        transform:translate(-50%, -50%);
     }
 
     menu ul {
@@ -418,6 +464,18 @@ footer div a {
 
 @media screen and (min-width:992px) and (max-width:1200px) {
 
+    header h1 {
+        font-size:1.5em;
+    }
+
+    header img {
+        width:45px;
+    }
+
+    header a p {
+        font-size:1em;
+    }
+
     header span.material-icons{
         display:none;
     }
@@ -461,13 +519,22 @@ footer div a {
     }
 
     main h1 {
-        font-size:1.5em;
+        font-size:1.2em;
     }
 
-    main div.personagens{
-       display:flex;
-       justify-content: center;
-       flex-wrap: wrap;
+    div.bloco img {
+        width:70px;
+    }
+
+    div.elemento img{
+        background:var(--cor2);
+        width:20px;
+        border-radius:50%;
+        padding:5px;
+        position:absolute;
+        top:10%;
+        left:90%;
+        transform:translate(-50%, -50%);
     }
 
     menu ul {
@@ -498,6 +565,19 @@ footer div a {
 }
 
 @media screen and (min-width:1200px) {
+
+    header h1 {
+        font-size:1.5em;
+    }
+
+    header img {
+        width:45px;
+    }
+
+    header a p {
+        font-size:1em;
+    }
+
     header span.material-icons{
         display:none;
     }
@@ -542,13 +622,22 @@ footer div a {
     }
 
     main h1 {
-        font-size:1.5em;
+        font-size:1.2em;
     }
 
-    main div.personagens{
-       display:flex;
-       justify-content: center;
-       flex-wrap: wrap;
+    div.bloco img {
+        width:70px;
+    }
+
+    div.elemento img{
+        background:var(--cor2);
+        width:20px;
+        border-radius:50%;
+        padding:5px;
+        position:absolute;
+        top:10%;
+        left:90%;
+        transform:translate(-50%, -50%);
     }
 
     menu ul {

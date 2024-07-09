@@ -2,7 +2,7 @@
 
 @font-face {
     font-family:'lemon';
-    src: url(../fontes/LEMONMILK-Regular.otf);
+    src: url(../fontes/GaMaamli-Regular.ttf);
 }
  
 * {
@@ -51,9 +51,31 @@ header h1 {
     font-family:'lemon';
 }
 
+
 header img {
-    width:100px;
+    width:35px;
     margin:5px;
+    background-color:var(--cor5);
+    padding:5px;
+    border-radius:50%;
+}
+
+header a {
+    display:flex;
+    color:white;
+    text-decoration: none;
+    align-items: center;
+}
+
+header a:hover {
+    color:var(--cor2);
+}
+
+header a p {
+    background-color:var(--cor5);
+    padding:10px;
+    font-size:0.8em;
+    border-radius:5px;
 }
 
 header span {
@@ -783,8 +805,31 @@ section mark.a {
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
+    header h1 {
+        font-size:1.5em;
+    }
 
+    header {
+        height:50px;
+    }
+
+    header img {
+        width:45px;
+    }
+
+    header a p {
+        font-size:1em;
+    }
     
+    menu ul {
+        justify-content: left;
+        padding:0px;
+    }
+
+    menu li {
+        margin-left:10px;
+        padding:10px;
+    }
 
     main {
         max-width:650px;
@@ -922,6 +967,33 @@ section mark.a {
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
+
+    header h1 {
+        font-size:1.5em;
+    }
+
+    header {
+        height:50px;
+    }
+
+    header img {
+        width:45px;
+    }
+
+    header a p {
+        font-size:1em;
+    }
+    
+    menu ul {
+        justify-content: left;
+        padding:0px;
+    }
+
+    menu li {
+        margin-left:10px;
+        padding:10px;
+    }
+
     main {
         width:950px;
     }
@@ -1128,6 +1200,44 @@ section mark.a {
 }
 
 @media screen and (min-width:1200px) {
+
+    header span.material-icons {
+        display:none;
+    }
+
+    menu#itens {
+        display:block;
+        width:100%;
+        font-size:1em;
+    }
+
+    header h1 {
+        font-size:1.5em;
+    }
+
+    header {
+        height:50px;
+    }
+
+    header img {
+        width:45px;
+    }
+
+    header a p {
+        font-size:1em;
+    }
+    
+    menu ul {
+        justify-content: left;
+        padding:0px;
+    }
+
+    menu li {
+        margin-left:10px;
+        padding:10px;
+    }
+
+
     main {
         width:950px;
     }
