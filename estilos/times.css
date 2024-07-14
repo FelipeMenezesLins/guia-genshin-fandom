@@ -1,0 +1,188 @@
+@charset "UTF-8";
+ 
+@font-face {
+    font-family:'gamaamli';
+    src: url(../fontes/GaMaamli-Regular.ttf);
+}
+* {
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+:root {
+    /*cores*/
+    --cor1:#101633;
+    --cor2:#1C1F46;
+    --cor3:#24285A;
+    --cor4:#303B7A;
+    --cor5:#4D5FC4;
+    --cor6:#571396;
+    --cor7:#943ae9;
+    --cor8:#613c0c;
+    --cor9:#fbbe3c;
+}
+
+body {
+    background-color:rgb(28, 31, 70);
+    height: 100vh;
+}
+
+header {
+    background-color:var(--cor4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    height:50px;
+}
+
+header section#title {
+    display:flex;
+    align-items:center;
+    margin-right:10px;
+}
+
+header h1 {
+    color:rgb(239, 241, 218);
+    margin:5px;
+    font-size:1em;
+    font-family:'gamaamli';
+}
+
+header img {
+    width:35px;
+    margin:5px;
+    background-color:var(--cor5);
+    padding:5px;
+    border-radius:50%;
+}
+
+header a {
+    display:flex;
+    color:white;
+    text-decoration: none;
+    align-items: center;
+}
+
+header a:hover {
+    color:var(--cor2);
+}
+
+header a p {
+    background-color:var(--cor5);
+    padding:10px;
+    font-size:0.8em;
+    border-radius:5px;
+}
+
+header span {
+    color:rgb(214, 212, 212);
+    cursor:pointer;
+}
+
+menu#itens {
+    display:none;
+    background-color:var(--cor4);
+    margin:auto;
+    width:100%;
+    height:45px;
+    border-top:1px solid var(--cor2);
+}
+
+menu ul {
+    display:flex;
+    height:100%;
+    list-style-type:none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+menu li {
+    background-color:var(--cor4);
+    padding:5px; 
+}
+
+menu a {
+    color:white;
+    text-decoration:none;
+}
+
+menu a:hover {
+    color:rgb(214, 212, 212);
+}
+
+main {
+    max-width:400px;
+    background-color:var(--cor3);
+    margin:auto;
+    margin: 40px auto;
+    border-radius:5px;
+    padding:15px;
+}
+
+main h1{
+    font-size:1.2em;
+    color:rgb(222, 219, 219);
+    text-align:center;
+    margin-bottom:20px;
+
+}
+
+main div h2.nome {
+    color:rgb(240, 240, 240);
+    font-size:1em;
+    margin-left:18px;
+    margin-bottom:10px;
+}
+
+main div.times {
+    background-color: var(--cor4);
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:5px;
+    border-radius:5px;
+}
+
+div.star-5 {
+    position: relative;
+}
+
+div.star-4 {
+    position:relative;
+}
+
+div.times a {
+    color:rgb(225, 223, 223);
+    text-decoration:none;
+}
+
+div.times a p {
+    text-align: center;
+    font-size:0.8em;
+}
+
+div.star-5 a img {
+    background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
+    width:70px;
+    border-radius:5px;
+}
+
+div.star-4 a img {
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor7));
+    width:70px;
+    border-radius:5px;
+}
+
+div.elementos img {
+    background-color:var(--cor3);
+    width:26px;
+    border-radius:50%;
+    padding:2px;
+    position: absolute;
+    top:-6%;
+    left:70%;
+}
