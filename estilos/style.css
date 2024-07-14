@@ -111,7 +111,34 @@ menu a {
 menu a:hover {
     color:rgb(214, 212, 212);
 }
+/*Pesquisa*/
+div#procurar {
+    background-color: var(--cor3);
+    width:300px;
+    margin:auto;
+    padding:10px;
+    margin-top:20px;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+}
 
+div#procurar img {
+    width:25px;
+    background-color: var(--cor1);
+    padding:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+div#procurar input {
+    padding:10px;
+    background-color: var(--cor2);
+    border:0px;
+    border-radius:5px;
+    color:white;
+    margin-right:5px;
+}
 /*Menu de seleção*/
 div#seleçao {
     background-color: var(--cor4);
