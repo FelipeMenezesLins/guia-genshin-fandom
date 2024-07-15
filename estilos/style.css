@@ -65,8 +65,9 @@ header a {
     align-items: center;
 }
 
-header a:hover {
-    color:var(--cor2);
+header a p:hover {
+    color:white;
+    background-color:var(--cor2);
 }
 
 header a p {
@@ -114,18 +115,19 @@ menu a:hover {
 /*Pesquisa*/
 div#procurar {
     background-color: var(--cor3);
-    width:300px;
+    max-width:280px;
     margin:auto;
     padding:10px;
     margin-top:20px;
     border-radius:5px;
     display:flex;
     align-items: center;
+    box-shadow: 1px 1px 4px var(--cor1);
 }
 
 div#procurar img {
     width:25px;
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     padding:5px;
     border-radius:5px;
     cursor:pointer;
@@ -146,6 +148,7 @@ div#seleçao {
     margin:auto;
     margin-top:20px;
     border-radius:5px;
+    box-shadow: 1px 1px 4px var(--cor1)
 }
 
 div#raridade {
@@ -276,7 +279,7 @@ footer img {
     display:block;
     margin:auto;
     margin-top:20px;
-    background-color: rgb(42, 42, 182);
+    background-color: var(--cor2);
     border-radius:50%;
 }
 
@@ -316,6 +319,15 @@ footer div a {
 }
 
 @media screen and (min-width:600px) and (max-width:768px) {
+
+    div#procurar {
+        max-width:500px;
+    }
+
+    div#procurar input {
+        width:450px;
+    }
+
     header h1 {
         font-size:1.5em;
     }
@@ -398,6 +410,15 @@ footer div a {
         font-size:1em;
     }
 
+    div#procurar {
+        max-width:720px;
+    }
+
+    div#procurar input {
+        width:650px;
+        padding:10px;
+        font-size:1em;
+    }
 
     div#seleçao {
         display:flex;
@@ -507,6 +528,16 @@ footer div a {
         display:none;
     }
 
+    div#procurar {
+        max-width:720px;
+    }
+
+    div#procurar input {
+        width:650px;
+        padding:10px;
+        font-size:1em;
+    }
+
     div#seleçao {
         display:flex;
         justify-content: space-around;
@@ -612,6 +643,16 @@ footer div a {
     menu#itens {
         display:block;
         width:100%;
+        font-size:1em;
+    }
+
+    div#procurar {
+        max-width:720px;
+    }
+
+    div#procurar input {
+        width:650px;
+        padding:10px;
         font-size:1em;
     }
 

@@ -65,8 +65,9 @@ header a {
     align-items: center;
 }
 
-header a:hover {
-    color:var(--cor2);
+header a p:hover {
+    color:white;
+    background-color:var(--cor2);
 }
 
 header a p {
@@ -119,6 +120,7 @@ main {
     margin: 40px auto;
     border-radius:5px;
     padding:15px;
+    box-shadow: 1px 1px 4px var(--cor1);
 }
 
 main h1{
@@ -138,13 +140,14 @@ main div h2.nome {
 
 main div.times {
     background-color: var(--cor4);
-    width:90%;
-    margin:auto;
+    width:95%;
+    margin:10px auto;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding:5px;
+    padding:10px;
     border-radius:5px;
+    box-shadow: 1px 1px 4px var(--cor2);
 }
 
 div.star-5 {
@@ -158,22 +161,24 @@ div.star-4 {
 div.times a {
     color:rgb(225, 223, 223);
     text-decoration:none;
+    
 }
 
 div.times a p {
     text-align: center;
     font-size:0.8em;
+    margin:2px;
 }
 
 div.star-5 a img {
     background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
-    width:70px;
+    width:65px;
     border-radius:5px;
 }
 
 div.star-4 a img {
     background-image: linear-gradient(to bottom, var(--cor6), var(--cor7));
-    width:70px;
+    width:65px;
     border-radius:5px;
 }
 
@@ -185,4 +190,58 @@ div.elementos img {
     position: absolute;
     top:-6%;
     left:70%;
+}
+
+main a img:hover {
+    width:73px;
+}
+
+
+footer {
+    background-color:rgb(36, 40, 90);
+    padding:10px;
+    color:rgb(177, 177, 177);
+}
+
+footer img {
+    display:block;
+    margin:auto;
+    margin-top:20px;
+    background-color: var(--cor2);
+    border-radius:50%;
+}
+
+footer h1 {
+    color:white;
+    margin-bottom:10px;
+}
+
+footer h3 {
+ font-size:16px;
+ margin-top:16px;
+ margin-bottom:30px;
+}
+
+footer section#final {
+    display:flex;
+    justify-content: space-around;
+}
+
+footer div {
+    margin-left:20px;
+}
+
+footer div h6 {
+    color:white;
+    font-size:20px;
+}
+
+footer div ul {
+    list-style-type: none;
+}
+
+footer div a {
+    color:rgb(177, 177, 177);
+    text-decoration:none;
+    font-size: 20px;
 }
