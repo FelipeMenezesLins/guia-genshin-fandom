@@ -123,6 +123,37 @@ main {
     box-shadow: 1px 1px 4px var(--cor1);
 }
 
+div#procurar {
+    background-color: var(--cor3);
+    max-width:300px;
+    margin:auto;
+    padding:10px;
+    margin-top:20px;
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    box-shadow: 1px 1px 4px var(--cor1);
+}
+
+div#procurar img {
+    width:25px;
+    background-color: var(--cor4);
+    padding:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+div#procurar input {
+    padding:10px;
+    background-color: var(--cor2);
+    border:0px;
+    border-radius:5px;
+    color:white;
+    margin-right:5px;
+    width:250px;
+}
+
+
 main h1{
     font-size:1.2em;
     color:rgb(222, 219, 219);
@@ -194,6 +225,7 @@ div.elementos img {
 
 main a img:hover {
     width:73px;
+    transition-duration:.2s;
 }
 
 
@@ -244,4 +276,64 @@ footer div a {
     color:rgb(177, 177, 177);
     text-decoration:none;
     font-size: 20px;
+}
+
+/*medias querys*/
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    header h1 {
+        font-size:1.5em;
+    }
+
+    header img {
+        width:45px;
+    }
+
+    header a p {
+        font-size:1em;
+    }
+
+    div#procurar {
+        max-width:650px;
+    }
+
+    div#procurar input {
+        width:600px;
+        padding:10px;
+        font-size:1em;
+    }
+
+    menu ul {
+        justify-content: left;
+        padding:0px;
+    }
+
+    menu li {
+        margin-left:10px;
+        padding:10px;
+    }
+
+    main {
+        max-width:700px;
+        padding:20px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+    }
+
+    div.central {
+      width:325px;
+      margin:20px 5px;
+    }
+
+    div.times {
+        box-shadow: 0px;
+    }
+
+    main h1 {
+       width:100%;
+    }
+
 }
