@@ -4,6 +4,12 @@
     font-family:'gamaamli';
     src: url(../fontes/GaMaamli-Regular.ttf);
 }
+
+@font-face {
+    font-family:'one';
+    src: url(../fontes/PasseroOne-Regular.ttf)
+}
+
 * {
     font-family:Arial, Helvetica, sans-serif;
     margin:0px;
@@ -104,6 +110,7 @@ menu li {
 }
 
 menu a {
+    font-family:'one';
     color:white;
     text-decoration:none;
 }
@@ -202,7 +209,10 @@ main h1 {
     font-size:1em;
     padding:10px;
     text-align: center;
+    font-family: 'one';
 }
+
+
 
  section#star-5 {
     width:90%;
@@ -376,7 +386,7 @@ footer div a {
     }
 
     main h1 {
-        font-size:1.2em;
+        font-size:1.4em;
     }
 
     div.bloco img {
@@ -484,7 +494,7 @@ footer div a {
     }
 
     main h1 {
-        font-size:1.2em;
+        font-size:1.5em;
     }
 
     div.bloco img {
@@ -586,7 +596,7 @@ footer div a {
     }
 
     main h1 {
-        font-size:1.2em;
+        font-size:1.5em;
     }
 
     div.bloco img {
@@ -707,7 +717,7 @@ footer div a {
     }
 
     main h1 {
-        font-size:1.2em;
+        font-size:1.5em;
     }
 
     div.bloco img {
