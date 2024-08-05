@@ -292,7 +292,7 @@ footer div a {
     }
 
     header img {
-        width:45px;
+        width:40px;
     }
 
     header a p {
@@ -391,6 +391,14 @@ footer div a {
         color:white;
         border-radius:5px;
         transition:.2s;
+    }
+
+    span.material-icons {
+        display:none;
+    }
+
+    menu#itens {
+        display:block;
     }
 
     main {

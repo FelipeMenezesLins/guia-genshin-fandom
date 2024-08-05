@@ -4,6 +4,11 @@
     font-family:'lemon';
     src: url(../fontes/GaMaamli-Regular.ttf);
 }
+
+@font-face {
+    font-family:'one';
+    src: url(../fontes/PasseroOne-Regular.ttf)
+}
  
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +60,6 @@ header h1 {
 header img {
     width:35px;
     margin:5px;
-    background-color:var(--cor5);
     padding:5px;
     border-radius:50%;
 }
@@ -112,6 +116,7 @@ menu li {
 menu a {
     color:white;
     text-decoration:none;
+    font-family:'one';
 }
 
 menu a:hover {
@@ -225,6 +230,7 @@ div#lista {
     margin-bottom:10px;
     padding-top:5px;
     padding:5px;
+    position:relative;
 }
 
 div.duas-prt {
@@ -275,6 +281,65 @@ div#armas > div.alinhar {
   display: flex;
   align-items:center;
 }
+
+/*Mostrar arma e passiva*/ 
+
+div.hidden {
+    display:none;
+}
+
+div.mostrar {
+    display:flex;
+    flex-wrap: wrap;
+    width:250px;
+    justify-content: space-between;
+    background-color:var(--cor1);
+    padding:10px;
+    border-radius:5px;
+    position:absolute;
+    top:125%;
+    left:40%;
+    transform:translate(-0%, -0%);
+}
+
+div.mostrar h3 {
+    color:white;
+    margin:10px;
+}
+
+div.mostrar h4 {
+    color:rgb(208, 208, 208);
+    font-size:1em;
+    font-weight:normal;
+}
+
+div.mostrar p {
+    background-color:var(--cor2);
+    margin:10px 0px;
+    padding:10px;
+    border-radius:5px;
+    color:rgb(203, 200, 200);
+}
+
+div.arma-simples {
+    display:flex;
+    align-items:center;
+}
+
+div.assinatura img{
+    width:80px;
+    background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
+    border-radius:5px;
+    box-shadow:1px 1px 4px #00000038;
+}
+
+div.arma-simples img {
+    background-color:var(--cor4);
+    width:40px;
+    margin-right:5px;
+    border-radius:5px;
+}
+
 
 div#armas > div.quatro {
     background-color:#303B7A;
@@ -885,6 +950,13 @@ section mark.a {
     div.duas-prt {
        width:50%;
     }
+    /*Armas e Passivas*/
+    
+    div.mostrar {
+        top:75%;
+        left:55%;
+        transform:translate(-0%, -0%); 
+    }
 
     /*Artefatos*/
     div.artefatos-2 p.desapareça {
@@ -991,8 +1063,24 @@ section mark.a {
     }
 
     menu li {
-        margin-left:10px;
-        padding:10px;
+        margin-left:0px;
+        padding:13px;
+        border-radius:5px;
+    }
+
+    menu li:hover {
+        background-color:#2c366e;
+        color:white;
+        border-radius:5px;
+        transition:.2s;
+    }
+
+    span.material-icons {
+        display:none;
+    }
+
+    menu#itens {
+        display:block;
     }
 
     main {
@@ -1096,6 +1184,14 @@ section mark.a {
         text-align: center;
         width:100%;
         font-size:1.3em;
+    }
+
+    /*Armas e Passivas*/
+
+    div.mostrar {
+        top:75%;
+        left:55%;
+        transform:translate(-0%, -0%); 
     }
 
     /*Artefatos*/
@@ -1202,15 +1298,7 @@ section mark.a {
 
 @media screen and (min-width:1200px) {
 
-    header span.material-icons {
-        display:none;
-    }
 
-    menu#itens {
-        display:block;
-        width:100%;
-        font-size:1em;
-    }
 
     header h1 {
         font-size:1.5em;
@@ -1234,10 +1322,25 @@ section mark.a {
     }
 
     menu li {
-        margin-left:10px;
-        padding:10px;
+        margin-left:0px;
+        padding:13px;
+        border-radius:5px;
     }
 
+    menu li:hover {
+        background-color:#2c366e;
+        color:white;
+        border-radius:5px;
+        transition:.2s;
+    }
+
+    span.material-icons {
+        display:none;
+    }
+
+    menu#itens {
+        display:block;
+    }
 
     main {
         width:950px;
@@ -1330,16 +1433,30 @@ section mark.a {
     }
 
 
-     section div#armas h2 {
+    div#armas h2 {
         text-align: center;
         width:100%;
         font-size:1.3em;
     }
 
-     section div#artefato h2 {
+     div#artefato h2 {
         text-align: center;
         width:100%;
         font-size:1.3em;
+    }
+
+    /*Armas e Passivas*/
+    
+    div.mostrar {
+        width:200px;
+        font-size:.8em;
+        top:75%;
+        left:29%;
+        transform:translate(-0%, -0%); 
+    }
+
+    div.mostrar h3 {
+        font-size:1em;
     }
 
     /*Artefatos*/
