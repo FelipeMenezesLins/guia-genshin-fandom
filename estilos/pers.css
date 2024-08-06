@@ -126,10 +126,9 @@ menu a:hover {
 main {
     background-color:#1C1F46;
     padding:15px;
-    width:90%;
-    margin:auto;
+    width: 320px;;
+    margin:10px auto;
     border-radius:5px;
-    margin-top:10px;
 }
 
 main article {
@@ -230,11 +229,14 @@ div#lista {
     margin-bottom:10px;
     padding-top:5px;
     padding:5px;
-    position:relative;
 }
 
-div.duas-prt {
+div#duas-prt2 {
     margin-top:-5px;
+    width:90%;
+    margin:auto;
+    padding:10px;
+    position:relative;
 }
 
 
@@ -260,9 +262,9 @@ div.txt > p {
 
 /*Armas do Personagem*/
 
+
 div#armas {
     background-color:#24285A;
-    max-width: 800px;
     margin:auto;
     width:90%;
     display: flex;
@@ -273,73 +275,14 @@ div#armas {
 }
 
 div#armas > div.alinhar {
-  background-color:#303B7A;
-  width:100%;
-  padding:10px;
-  margin:5px;
-  border-radius:5px;
-  display: flex;
-  align-items:center;
-}
-
-/*Mostrar arma e passiva*/ 
-
-div.hidden {
-    display:none;
-}
-
-div.mostrar {
-    display:flex;
-    flex-wrap: wrap;
-    width:250px;
-    justify-content: space-between;
-    background-color:var(--cor1);
+    background-color:#303B7A;
+    width:90%;
     padding:10px;
+    margin:5px auto;
     border-radius:5px;
-    position:absolute;
-    top:125%;
-    left:40%;
-    transform:translate(-0%, -0%);
-}
-
-div.mostrar h3 {
-    color:white;
-    margin:10px;
-}
-
-div.mostrar h4 {
-    color:rgb(208, 208, 208);
-    font-size:1em;
-    font-weight:normal;
-}
-
-div.mostrar p {
-    background-color:var(--cor2);
-    margin:10px 0px;
-    padding:10px;
-    border-radius:5px;
-    color:rgb(203, 200, 200);
-}
-
-div.arma-simples {
-    display:flex;
+    display: flex;
     align-items:center;
 }
-
-div.assinatura img{
-    width:80px;
-    background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
-    border-radius:5px;
-    box-shadow:1px 1px 4px #00000038;
-}
-
-div.arma-simples img {
-    background-color:var(--cor4);
-    width:40px;
-    margin-right:5px;
-    border-radius:5px;
-}
-
 
 div#armas > div.quatro {
     background-color:#303B7A;
@@ -353,8 +296,8 @@ div#armas > div.quatro {
 
 div.alinhar > p {
     color:white;
-    margin-left:10px;
-    margin-right: 20px;
+    font-size:.8em;
+    margin:5px;
     background-color: #24285A;
     padding:15px;
     border-radius: 5px;
@@ -362,15 +305,15 @@ div.alinhar > p {
 
 div.quatro > p{
     color:white;
-    margin-left:10px;
-    margin-right: 20px;
-    background-color:#24285A;
+    font-size:.8em;
+    margin:5px;
+    background-color: #24285A;
     padding:15px;
     border-radius: 5px;
 }
 
 div.alinhar img {
-    width:50px;
+    width:45px;
     background-image: linear-gradient(to bottom, rgb(97, 60, 12), rgb(251, 190, 60));
     border-radius: 5px;
 }
@@ -381,36 +324,95 @@ div.quatro img {
     border-radius: 5px;
 }
 
+/*Mostrar arma e passiva*/ 
+
+div.hidden {
+    display:none;
+}
+
+div.mostrar {
+    display:flex;
+    flex-wrap: wrap;
+    width:150px;
+    justify-content: space-between;
+    background-color:var(--cor1);
+    padding:10px;
+    border-radius:5px;
+    position:absolute;
+    top:20%;
+    left:80%;
+    transform:translate(-50%, -50%);
+}
+
+div.mostrar h3 {
+    font-size:.7em;
+    color:white;
+    margin:10px;
+}
+
+div.mostrar h4 {
+    color:rgb(208, 208, 208);
+    font-size:1em;
+    font-weight:normal;
+}
+
+div.mostrar p {
+    font-size:0.8em;
+    background-color:var(--cor2);
+    margin:10px 0px;
+    padding:10px;
+    border-radius:5px;
+    color:rgb(203, 200, 200);
+}
+
+div.arma-simples {
+    display:flex;
+    align-items:center;
+}
+
+div.assinatura img{
+    width:45px;
+    background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
+    border-radius:5px;
+    box-shadow:1px 1px 4px #00000038;
+}
+
+div.arma-simples img {
+    background-color:var(--cor4);
+    width:25px;
+    margin-right:5px;
+    border-radius:5px;
+}
+
+div.arma-simples h4 {
+    font-size:.8em;
+}
+
 /*Artefatos do Personagem*/
 
 div#artefato {
     background-color:#24285A;
+    max-width: 800px;
     margin:auto;
+    width:90%;
     display: flex;
     flex-wrap:wrap;
-    justify-content: center;
     margin-bottom:10px;
     padding:10px;
     border-radius: 5px;
 }
 
 div#artefato > div.ordem {
-    background-color:var(--cor4);
+    background-color:#303B7A;
     width:90%;
     padding:10px;
-    margin:5px;
-    margin-right:5px;
+    margin:5px auto;
     border-radius:5px;
     display: flex;
     align-items:center;
-    position:relative;
   }
 
-  div.teste {
-    position:relative;
-    }
-
-  div.teste p.quantidade {
+  div.ordem p.quantidade {
     color:white;
     margin-left:10px;
     margin-right: 20px;
@@ -423,52 +425,38 @@ div#artefato > div.ordem {
     text-align:center;
     line-height:10px;
     position: absolute;
-    top:74%;
-    left:60%;
+    top:71%;
+    left:32%;
     transform:translate(-50%, -50%);
+    display:none;
 }
 
 
-  div.ordem > p {
+  div.ordem p {
     color:white;
-    margin-left:10px;
-    margin-right: 20px;
-    background-color:var(--cor3);
+    font-size:.8em;
+    margin:5px;
+    background-color: #24285A;
     padding:15px;
     border-radius: 5px;
-    font-size:.9em
 }
 
 div.ordem img {
-    width:50px;
+    width:45px;
     background-image: linear-gradient(to bottom, var(--cor8), var(--cor9));
     border-radius: 5px;
 }
 
-div#duas img{
-    margin-right:px;
-}
-
-
 div.artefatos-2 {
-    width:50%;
+    width:40%;
     color:white;
     display:flex;
     align-items: center;
 }
 
 div.artefatos-2 p.desapareça {
-    color:white;
-    margin-left:10px;
-    margin-right: 20px;
-    background-color:var(--cor3);
-    padding:15px;
-    border-radius: 5px;
-    font-size:.9em;
     display:none;
 }
-
-
 
 /*Status do Personagem*/
 
@@ -570,7 +558,7 @@ section > div#teams > div.pers {
 }
 
     div.laranja img {
-    width:60px;
+    width:55px;
     border-radius: 5px;
     background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
 }
@@ -602,7 +590,7 @@ div.redondo2 img {
 }
 
 div.roxo img {
-    width:60px;
+    width:55px;
     background-image:linear-gradient(to bottom, var(--cor6), var(--cor7));
     margin-top: 4px;
     margin-bottom:2px;
@@ -898,7 +886,7 @@ section mark.a {
     }
 
     main {
-        max-width:650px;
+        width:650px;
     }
     /*Cabeçalho*/
     div#ajeitar {
@@ -953,11 +941,30 @@ section mark.a {
     /*Armas e Passivas*/
     
     div.mostrar {
-        top:75%;
+        width:250px;
+        top:0%;
         left:55%;
         transform:translate(-0%, -0%); 
     }
 
+    div.mostrar h3 {
+        font-size:1em;
+    }
+
+    div.mostrar p {
+        font-size:.8em;
+    }
+
+    div.assinatura img {
+        width:80px;
+    }
+
+    div.arma-simples img {
+        width:40px
+    }
+
+
+    
     /*Artefatos*/
     div.artefatos-2 p.desapareça {
         display:block;
@@ -1188,10 +1195,27 @@ section mark.a {
 
     /*Armas e Passivas*/
 
+   
     div.mostrar {
-        top:75%;
-        left:55%;
+        width:180px;
+        font-size:.8em;
+        top:95%;
+        left:24%;
         transform:translate(-0%, -0%); 
+    }
+
+    div.mostrar h3 {
+        font-size:1em;
+    }
+
+    div.mostrar p {
+        font-size:.9em
+    }
+
+    /*Artefatos*/
+    div.artefatos-2 p.desapareça {
+        display:block;
+        font-size:.9em;
     }
 
     /*Artefatos*/
@@ -1410,18 +1434,18 @@ section mark.a {
      div#duas-prt2 {
         display:flex;
         justify-content: space-between;
-        align-items: center;
-        width:90%;
+        align-items: start;
+        width:100%;
         margin:auto;
         margin-top:15px;
     }
     
     div#duas-prt2  section#lista-armas{
-        width:40%;
+        width:50%;
     }
 
     div#duas-prt2 section#lista-artefato {
-        width:60%;
+        width:50%;
     }
 
     div#armas {
@@ -1429,7 +1453,7 @@ section mark.a {
     }
 
     div#artefato {
-        width:100%;
+        width:90%;
     }
 
 
@@ -1445,13 +1469,16 @@ section mark.a {
         font-size:1.3em;
     }
 
-    /*Armas e Passivas*/
-    
-    div.mostrar {
-        width:200px;
+    div#artefato p.desapareça {
         font-size:.8em;
-        top:75%;
-        left:29%;
+    }
+
+    /*Armas e Passivas*/
+    div.mostrar {
+        width:250px;
+        font-size:1em;
+        top:25%;
+        left:80%;
         transform:translate(-0%, -0%); 
     }
 
@@ -1459,6 +1486,19 @@ section mark.a {
         font-size:1em;
     }
 
+    div.mostrar p {
+        font-size:1em
+    }
+
+    div.assinatura img {
+        width:80px;
+    }
+
+    div.arma-simples img {
+        width:40px;
+    }
+
+   
     /*Artefatos*/
     div.artefatos-2 p.desapareça {
         display:block;
