@@ -286,9 +286,9 @@ div#armas > div.alinhar {
 
 div#armas > div.quatro {
     background-color:#303B7A;
-    width:100%;
+    width:90%;
     padding:10px;
-    margin:5px;
+    margin:5px auto;
     border-radius:5px;
     display: flex;
     align-items:center;
@@ -319,7 +319,7 @@ div.alinhar img {
 }
 
 div.quatro img {
-    width:50px;
+    width:45px;
     background-image:linear-gradient(to bottom, rgb(87, 19, 150),rgb(148, 58, 233));
     border-radius: 5px;
 }
@@ -330,21 +330,45 @@ div.hidden {
     display:none;
 }
 
+div.hi-dden {
+    display:none;
+}
+
 div.mostrar {
     display:flex;
     flex-wrap: wrap;
-    width:150px;
+    width:175px;
     justify-content: space-between;
     background-color:var(--cor1);
     padding:10px;
     border-radius:5px;
     position:absolute;
     top:20%;
-    left:80%;
+    left:78%;
+    transform:translate(-50%, -50%);
+}
+
+div.mostrar2 {
+    display:flex;
+    flex-wrap: wrap;
+    width:175px;
+    justify-content: space-between;
+    background-color:var(--cor1);
+    padding:10px;
+    border-radius:5px;
+    position:absolute;
+    top:55%;
+    left:78%;
     transform:translate(-50%, -50%);
 }
 
 div.mostrar h3 {
+    font-size:.7em;
+    color:white;
+    margin:10px;
+}
+
+div.mostrar2 h3 {
     font-size:.7em;
     color:white;
     margin:10px;
@@ -356,7 +380,35 @@ div.mostrar h4 {
     font-weight:normal;
 }
 
+div.mostrar2 h4 {
+    color:rgb(208, 208, 208);
+    font-size:1em;
+    font-weight:normal;
+}
+
 div.mostrar p {
+    font-size:0.8em;
+    background-color:var(--cor2);
+    margin:10px 0px;
+    padding:10px;
+    border-radius:5px;
+    color:rgb(203, 200, 200);
+}
+
+div.mostrar2 section.art-passiva {
+    font-size:0.9em;
+    background-color:var(--cor2);
+    margin:10px 0px;
+    padding:0px;
+    border-radius:5px;
+    color:rgb(203, 200, 200);
+}
+
+div.mostrar2 p {
+    font-size:0.9em;
+}
+
+div.mostrar2 p {
     font-size:0.8em;
     background-color:var(--cor2);
     margin:10px 0px;
@@ -372,7 +424,7 @@ div.arma-simples {
 
 div.assinatura img{
     width:45px;
-    background-image:linear-gradient(to bottom, var(--cor8), var(--cor9));
+    background-color:var(--cor3);
     border-radius:5px;
     box-shadow:1px 1px 4px #00000038;
 }
@@ -963,6 +1015,26 @@ section mark.a {
         width:40px
     }
 
+    /*Artefatos e Passivas*/
+
+    div.mostrar2 {
+        width:250px;
+        top:45%;
+        left:55%;
+        transform:translate(-0%, -0%); 
+    }
+
+    div.mostrar2 h3 {
+        font-size:.8em;
+    }
+
+    div.mostrar2 p {
+        font-size:.8em;
+    }
+
+    div.assinatura img {
+        width:80px;
+    }
 
     
     /*Artefatos*/
@@ -1477,8 +1549,8 @@ section mark.a {
     div.mostrar {
         width:250px;
         font-size:1em;
-        top:25%;
-        left:80%;
+        top:10%;
+        left:60%;
         transform:translate(-0%, -0%); 
     }
 

@@ -133,17 +133,17 @@
 
                         <div class="alinhar">
                             <p>3</p>
-                                <img src="../imagens/armas/Thundering_Pulse.png">
+                                <img src="../imagens/armas/Thundering_Pulse.png" class="opa">
                             <p>Agitação Trovejante</p>
                         </div>
                         <div class="alinhar">
                             <p>4</p>
-                                <img src="../imagens/armas/harpa-celestial.png">
+                                <img src="../imagens/armas/harpa-celestial.png" class="opa">
                             <p>Harpa Celestial</p>
                         </div>
                         <div class="quatro">
                             <p>5</p>
-                                <img src="../imagens/armas/Prototype_Crescent.png">
+                                <img src="../imagens/armas/Prototype_Crescent.png" class="opa">
                             <p>Protótipo Crecente</p>
                         </div>
                     </div>
@@ -184,6 +184,82 @@
                         </p>
                     </div>
                 </div>
+                <!--Armas e Passivas-->
+                <div class="hidden">
+                    <div class="mostrar">
+                        <h3>Agitação Trovejante</h3>
+                        <div class="assinatura">
+                            <img src="../imagens/armas/Thundering_Pulse.png">
+                        </div>
+                        <div class="arma-simples">
+                            <img src="../imagens/armas/arco-simples.png">
+                            <h4>Dano Crítico</h4>
+                        </div>
+                        <p>
+                            Aumenta o Ataque em 20-40%, e concede a grandeza do Selo de Trovoada. Nas cargas 1/2/3, o Selo de Trovoada aumenta o Dano do Ataque Normal em 12/24/40-24/48/80%. O personagem obterá uma carga de Selo de Trovoada nos seguintes cenários: Ataque Normal que causa Dano (a carga dura 5s), lançar uma Habilidade Elemental (carga dura 10s); Energia Elemental menor que 100% (carga desaparece quando a energia está completa). A duração de cada carga é calculada independentemente uma da outra.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden">
+                    <div class="mostrar">
+                        <h3>Harpa Celestial</h3>
+                        <div class="assinatura">
+                            <img src="../imagens/armas/harpa-celestial.png">
+                        </div>
+                        <div class="arma-simples">
+                            <img src="../imagens/armas/arco-simples.png">
+                            <h4>Taxa Crítica</h4>
+                        </div>
+                        <p>
+                            Balada Retumbante
+                            Aumenta o Dano Crítico em 20%. Ao acertar possui 60% de chance de infligir um pequeno ataque AdE causando 125% de Dano do ATQ Físico. Pode ser ativada uma vez a cada 4%s.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden">
+                    <div class="mostrar">
+                        <h3>Protótipo Crescente</h3>
+                        <div class="assinatura">
+                            <img src="../imagens/armas/Prototype_Crescent.png">
+                        </div>
+                        <div class="arma-simples">
+                            <img src="../imagens/armas/arco-simples.png">
+                            <h4>Ataque %</h4>
+                        </div>
+                        <p>
+                            Sem retorno
+                            Ataques carregados em pontos fracos aumentam a VELOCIDADE de Movimento em 10% e o ATQ em 36 % por 10s.
+                        </p>
+                    </div>
+                </div>
+
+                <!--Artefatos e passivas-->
+               
+                <div class="hi-dden">
+                    <div class="mostrar2">
+                        <h3>Caçador das sombras</h3>
+                        <div class="assinatura">
+                            <img src="../imagens/artefatos/marechaussee_hunter.png">
+                        </div>
+                        <div class="arma-simples">
+                            <h4>Conjuntos de Artefatos</h4>
+                        </div>
+                        <div>
+                        <section class="art-passiva">
+                            <p>
+                                <mark class="c">Bônus de 2 peças</mark>
+                                Aumenta o Dano do Ataque Normal e do Ataque Carregado em 15%.
+                            </p>
+                            <p>
+                                <mark class="c">Bônus de 4 peças</mark>
+                                Quando a Vida atual aumenta ou diminui, aumenta a Taxa CRIT em 12%. Esse efeito dura 5s e pode ser acumulado até 3 vezes.
+                            </p>
+                        </section> 
+                        </div>
+                    </div>
+                </div>
 
                  <!--ARTEFATOS-->
 
@@ -194,7 +270,7 @@
                         <h2>Melhores artefatos</h2>
                         <div class="ordem">
                             <p>1</p>
-                            <img src="../imagens/artefatos/marechaussee_hunter.png">
+                            <img src="../imagens/artefatos/marechaussee_hunter.png" class="art">
                             <p class="quantidade">4</p>
                             <p>Caçador das sombras</p>
                         </div>
@@ -848,4 +924,5 @@
     </footer>  
     <script src="main-menu.js"></script>
     <script src="armas.js"></script>
+    <script src="artefatos.js"></script>
 </body>
